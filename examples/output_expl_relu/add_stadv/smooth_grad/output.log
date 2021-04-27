@@ -1,0 +1,4012 @@
+True
+sigma:  0.9447309494018555
+attack:  [[Threat] ParameterizedXformAdv: {'lp_style': 'inf', 'lp_bound': 0.05, 'xform_class': <class 'mister_ed.spatial_transformers.FullSpatial'>, 'use_stadv': True}, [Threat] DeltaAddition: {'lp_style': 'inf', 'lp_bound': 0.03}]
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/ubuntu/PerceptualSimilarity/lpips/weights/v0.1/vgg.pth
+(START):  100.0 correct
+expl loss: 7.642929622520001e-10
+output loss: 1.4374460288670988e-27
+Color loss:  0.005852062720805407
+(iteration 00):  100.0 correct
+expl loss: 7.856355010993354e-10
+output loss: 5.028610855493086e-19
+Color loss:  39.209266662597656
+(iteration 01):  100.0 correct
+expl loss: 7.788487632609531e-10
+output loss: 1.1961897095232664e-18
+Color loss:  58.6515007019043
+(iteration 02):  100.0 correct
+expl loss: 7.457329198601315e-10
+output loss: 2.505319557957226e-18
+Color loss:  73.96784210205078
+(iteration 03):  100.0 correct
+expl loss: 7.739748841828487e-10
+output loss: 1.7279389405926472e-17
+Color loss:  86.96572875976562
+(iteration 04):  100.0 correct
+expl loss: 7.710592719867293e-10
+output loss: 1.7742924877588937e-17
+Color loss:  97.71607971191406
+(iteration 05):  100.0 correct
+expl loss: 7.727169459847971e-10
+output loss: 1.7790279313296373e-17
+Color loss:  107.31424713134766
+(iteration 06):  100.0 correct
+expl loss: 7.611057895040574e-10
+output loss: 1.797648097790451e-17
+Color loss:  115.81089782714844
+(iteration 07):  100.0 correct
+expl loss: 7.59448448572897e-10
+output loss: 1.822093600997108e-17
+Color loss:  123.5683822631836
+(iteration 08):  100.0 correct
+expl loss: 7.723133799153459e-10
+output loss: 4.547579686694511e-18
+Color loss:  130.8925018310547
+(iteration 09):  100.0 correct
+expl loss: 7.871664431391423e-10
+output loss: 1.949624502809716e-17
+Color loss:  137.7825927734375
+(iteration 10):  100.0 correct
+expl loss: 7.715480476733205e-10
+output loss: 2.0413179700195868e-17
+Color loss:  144.0640411376953
+(iteration 11):  100.0 correct
+expl loss: 7.58664020494848e-10
+output loss: 2.1428982307829363e-17
+Color loss:  149.94728088378906
+(iteration 12):  100.0 correct
+expl loss: 7.450972616673823e-10
+output loss: 2.2401144520705785e-17
+Color loss:  155.5449676513672
+(iteration 13):  100.0 correct
+expl loss: 7.612591668149093e-10
+output loss: 8.941374916986838e-18
+Color loss:  160.86593627929688
+(iteration 14):  100.0 correct
+expl loss: 7.654351041885832e-10
+output loss: 2.372482871541519e-17
+Color loss:  165.94972229003906
+(iteration 15):  100.0 correct
+expl loss: 7.795468714988374e-10
+output loss: 2.4880601863221234e-17
+Color loss:  170.88082885742188
+(iteration 16):  100.0 correct
+expl loss: 7.486662401134936e-10
+output loss: 2.6239803539072443e-17
+Color loss:  175.5464324951172
+(iteration 17):  100.0 correct
+expl loss: 7.623458531114125e-10
+output loss: 2.788423197938296e-17
+Color loss:  180.03956604003906
+(iteration 18):  100.0 correct
+expl loss: 7.94887267119293e-10
+output loss: 2.914824005598034e-17
+Color loss:  184.08338928222656
+(iteration 19):  100.0 correct
+expl loss: 7.7900597084124e-10
+output loss: 2.98354683263343e-17
+Color loss:  188.0619354248047
+(iteration 20):  100.0 correct
+expl loss: 7.464682205693407e-10
+output loss: 3.10404884990893e-17
+Color loss:  192.02337646484375
+(iteration 21):  100.0 correct
+expl loss: 7.713121807917389e-10
+output loss: 3.193294027941766e-17
+Color loss:  195.43858337402344
+(iteration 22):  100.0 correct
+expl loss: 7.779590305290185e-10
+output loss: 3.216584787013299e-17
+Color loss:  198.75343322753906
+(iteration 23):  100.0 correct
+expl loss: 7.387681022485992e-10
+output loss: 3.219254595158375e-17
+Color loss:  202.1249542236328
+(iteration 24):  100.0 correct
+expl loss: 7.444458383076835e-10
+output loss: 1.7817084928226766e-17
+Color loss:  205.43768310546875
+(iteration 25):  100.0 correct
+expl loss: 7.514614486225923e-10
+output loss: 1.763002795886525e-17
+Color loss:  208.84100341796875
+(iteration 26):  100.0 correct
+expl loss: 7.591815509577771e-10
+output loss: 1.804552905235676e-17
+Color loss:  212.1033477783203
+(iteration 27):  100.0 correct
+expl loss: 7.581851813043272e-10
+output loss: 1.9203547168345273e-17
+Color loss:  215.14947509765625
+(iteration 28):  100.0 correct
+expl loss: 7.575922666980262e-10
+output loss: 2.130915692429493e-17
+Color loss:  218.07806396484375
+(iteration 29):  100.0 correct
+expl loss: 7.918639077786338e-10
+output loss: 2.4077222545613807e-17
+Color loss:  220.85572814941406
+(iteration 30):  100.0 correct
+expl loss: 7.525141065833907e-10
+output loss: 2.646539389008913e-17
+Color loss:  223.6775665283203
+(iteration 31):  100.0 correct
+expl loss: 7.465054130406656e-10
+output loss: 2.7426720036941107e-17
+Color loss:  226.50729370117188
+(iteration 32):  100.0 correct
+expl loss: 7.556804626496216e-10
+output loss: 2.7902737664047e-17
+Color loss:  229.3057098388672
+(iteration 33):  100.0 correct
+expl loss: 7.674815782898747e-10
+output loss: 2.8497665812929836e-17
+Color loss:  232.0601806640625
+(iteration 34):  100.0 correct
+expl loss: 7.597815709914357e-10
+output loss: 2.921554939678501e-17
+Color loss:  234.80140686035156
+(iteration 35):  100.0 correct
+expl loss: 7.573178195663388e-10
+output loss: 2.997326669021828e-17
+Color loss:  237.40565490722656
+(iteration 36):  100.0 correct
+expl loss: 7.224454923182577e-10
+output loss: 2.8051382020122777e-17
+Color loss:  240.19204711914062
+(iteration 37):  100.0 correct
+expl loss: 7.670882817834013e-10
+output loss: 2.6692370595812455e-17
+Color loss:  243.04183959960938
+(iteration 38):  100.0 correct
+expl loss: 7.512176436463847e-10
+output loss: 2.6858653751270315e-17
+Color loss:  245.97412109375
+(iteration 39):  100.0 correct
+expl loss: 7.407157109895479e-10
+output loss: 2.676958790599428e-17
+Color loss:  248.8740692138672
+(iteration 40):  100.0 correct
+expl loss: 7.392920164939198e-10
+output loss: 2.670018083515618e-17
+Color loss:  251.7384490966797
+(iteration 41):  100.0 correct
+expl loss: 7.552237724084421e-10
+output loss: 2.724677516648632e-17
+Color loss:  254.6033935546875
+(iteration 42):  100.0 correct
+expl loss: 7.625235443065037e-10
+output loss: 2.809806809389527e-17
+Color loss:  257.4244384765625
+(iteration 43):  100.0 correct
+expl loss: 7.718591321648205e-10
+output loss: 2.895649297254565e-17
+Color loss:  260.1398620605469
+(iteration 44):  100.0 correct
+expl loss: 7.477300445479784e-10
+output loss: 3.07737789998226e-17
+Color loss:  262.5792236328125
+(iteration 45):  100.0 correct
+expl loss: 7.386407596676747e-10
+output loss: 3.300276274413454e-17
+Color loss:  265.0020446777344
+(iteration 46):  100.0 correct
+expl loss: 7.591203776691202e-10
+output loss: 3.498227874186784e-17
+Color loss:  267.39031982421875
+(iteration 47):  100.0 correct
+expl loss: 7.512501731810062e-10
+output loss: 3.6262976014504093e-17
+Color loss:  269.8576354980469
+(iteration 48):  100.0 correct
+expl loss: 7.385937972337331e-10
+output loss: 3.989176442221502e-17
+Color loss:  272.4532470703125
+(iteration 49):  100.0 correct
+expl loss: 7.606701935003457e-10
+output loss: 5.597494147454896e-17
+Color loss:  275.0824890136719
+(iteration 50):  100.0 correct
+expl loss: 7.618362052319583e-10
+output loss: 5.682163693211334e-17
+Color loss:  277.8072509765625
+(iteration 51):  100.0 correct
+expl loss: 7.41482431010354e-10
+output loss: 5.7373247286678e-17
+Color loss:  280.6941833496094
+(iteration 52):  100.0 correct
+expl loss: 7.437158111578412e-10
+output loss: 5.885018819655878e-17
+Color loss:  283.50018310546875
+(iteration 53):  100.0 correct
+expl loss: 7.268456947429058e-10
+output loss: 5.976032509838353e-17
+Color loss:  286.4383239746094
+(iteration 54):  100.0 correct
+expl loss: 7.278264102517085e-10
+output loss: 6.329820304805243e-17
+Color loss:  289.1621398925781
+(iteration 55):  100.0 correct
+expl loss: 7.428264670039653e-10
+output loss: 6.844815674991367e-17
+Color loss:  291.8341064453125
+(iteration 56):  100.0 correct
+expl loss: 7.17928716476024e-10
+output loss: 1.2131485126750887e-16
+Color loss:  294.3908386230469
+(iteration 57):  100.0 correct
+expl loss: 7.269819191080273e-10
+output loss: 1.3311840097128536e-16
+Color loss:  296.8626708984375
+(iteration 58):  100.0 correct
+expl loss: 7.41148531435698e-10
+output loss: 2.23905801007945e-16
+Color loss:  299.1433410644531
+(iteration 59):  100.0 correct
+expl loss: 7.296473425455474e-10
+output loss: 3.5595188473778604e-16
+Color loss:  301.4730529785156
+(iteration 60):  100.0 correct
+expl loss: 7.117616496188361e-10
+output loss: 5.122643506757195e-16
+Color loss:  303.786865234375
+(iteration 61):  100.0 correct
+expl loss: 7.434792781424449e-10
+output loss: 5.490678263548004e-16
+Color loss:  306.0371398925781
+(iteration 62):  100.0 correct
+expl loss: 7.216997000014658e-10
+output loss: 7.423432219241354e-16
+Color loss:  308.358154296875
+(iteration 63):  100.0 correct
+expl loss: 7.328460616129462e-10
+output loss: 7.825161417278348e-16
+Color loss:  310.7343444824219
+(iteration 64):  100.0 correct
+expl loss: 7.15814463259079e-10
+output loss: 8.307530798871911e-16
+Color loss:  313.2975158691406
+(iteration 65):  100.0 correct
+expl loss: 7.148441283355567e-10
+output loss: 1.0411953451380882e-15
+Color loss:  315.6767578125
+(iteration 66):  100.0 correct
+expl loss: 7.100334764587046e-10
+output loss: 1.2860323361243119e-15
+Color loss:  318.13031005859375
+(iteration 67):  100.0 correct
+expl loss: 7.175728899966316e-10
+output loss: 1.3351473298126157e-15
+Color loss:  320.4176025390625
+(iteration 68):  100.0 correct
+expl loss: 7.509170507624674e-10
+output loss: 1.6373984374252223e-15
+Color loss:  322.7056579589844
+(iteration 69):  100.0 correct
+expl loss: 7.172971661084659e-10
+output loss: 1.7387984456069291e-15
+Color loss:  324.9054260253906
+(iteration 70):  100.0 correct
+expl loss: 7.022827319680403e-10
+output loss: 2.110989698949034e-15
+Color loss:  327.03076171875
+(iteration 71):  100.0 correct
+expl loss: 7.221102604759722e-10
+output loss: 2.200324993346524e-15
+Color loss:  329.07440185546875
+(iteration 72):  100.0 correct
+expl loss: 7.223096010200436e-10
+output loss: 2.9186523430567175e-15
+Color loss:  331.0185852050781
+(iteration 73):  100.0 correct
+expl loss: 7.548748848229536e-10
+output loss: 3.424063773672676e-15
+Color loss:  332.85357666015625
+(iteration 74):  100.0 correct
+expl loss: 7.250405276160166e-10
+output loss: 3.579584528502723e-15
+Color loss:  334.7561950683594
+(iteration 75):  100.0 correct
+expl loss: 7.226156895079328e-10
+output loss: 4.075146236491535e-15
+Color loss:  336.5909423828125
+(iteration 76):  100.0 correct
+expl loss: 7.350473008038705e-10
+output loss: 4.185948733904238e-15
+Color loss:  338.40057373046875
+(iteration 77):  100.0 correct
+expl loss: 7.468479723549137e-10
+output loss: 4.755194685007649e-15
+Color loss:  340.2298278808594
+(iteration 78):  100.0 correct
+expl loss: 7.667290136126326e-10
+output loss: 5.825964609015594e-15
+Color loss:  341.9625549316406
+(iteration 79):  100.0 correct
+expl loss: 7.389874823182652e-10
+output loss: 6.504325344384304e-15
+Color loss:  343.62872314453125
+(iteration 80):  100.0 correct
+expl loss: 7.182092143231955e-10
+output loss: 7.252049607803669e-15
+Color loss:  345.14434814453125
+(iteration 81):  100.0 correct
+expl loss: 7.572782401155109e-10
+output loss: 7.367854258286382e-15
+Color loss:  346.4591064453125
+(iteration 82):  100.0 correct
+expl loss: 7.307942584411364e-10
+output loss: 8.60272411033064e-15
+Color loss:  347.6897277832031
+(iteration 83):  100.0 correct
+expl loss: 7.098868715083029e-10
+output loss: 8.683150735705383e-15
+Color loss:  348.9143981933594
+(iteration 84):  100.0 correct
+expl loss: 7.094200782375992e-10
+output loss: 8.703891184451851e-15
+Color loss:  350.3199768066406
+(iteration 85):  100.0 correct
+expl loss: 7.222037412546456e-10
+output loss: 8.091895480500516e-15
+Color loss:  351.77777099609375
+(iteration 86):  100.0 correct
+expl loss: 7.208539876124576e-10
+output loss: 8.122741879340676e-15
+Color loss:  353.2169189453125
+(iteration 87):  100.0 correct
+expl loss: 7.138825641739288e-10
+output loss: 8.720808973507362e-15
+Color loss:  354.7366943359375
+(iteration 88):  100.0 correct
+expl loss: 7.241878208219532e-10
+output loss: 8.752839524407783e-15
+Color loss:  356.24981689453125
+(iteration 89):  100.0 correct
+expl loss: 7.229377096962253e-10
+output loss: 8.84484593720444e-15
+Color loss:  357.8893737792969
+(iteration 90):  100.0 correct
+expl loss: 7.240532062802174e-10
+output loss: 8.832410646505799e-15
+Color loss:  359.5676574707031
+(iteration 91):  100.0 correct
+expl loss: 7.260309020651334e-10
+output loss: 8.789633788603562e-15
+Color loss:  361.2733459472656
+(iteration 92):  100.0 correct
+expl loss: 6.670091701188596e-10
+output loss: 8.799239989258374e-15
+Color loss:  362.9458923339844
+(iteration 93):  100.0 correct
+expl loss: 6.841193722628702e-10
+output loss: 8.782291707016762e-15
+Color loss:  364.6892395019531
+(iteration 94):  100.0 correct
+expl loss: 6.813463127031127e-10
+output loss: 8.762410996711757e-15
+Color loss:  366.6242980957031
+(iteration 95):  100.0 correct
+expl loss: 7.035314553149874e-10
+output loss: 9.511052596812997e-15
+Color loss:  368.5103454589844
+(iteration 96):  100.0 correct
+expl loss: 6.897629134527961e-10
+output loss: 9.594060131578024e-15
+Color loss:  370.3758544921875
+(iteration 97):  100.0 correct
+expl loss: 7.092540443842665e-10
+output loss: 1.0387996818533689e-14
+Color loss:  372.1626281738281
+(iteration 98):  100.0 correct
+expl loss: 7.293928239171521e-10
+output loss: 1.0592080089812193e-14
+Color loss:  373.9432678222656
+(iteration 99):  100.0 correct
+expl loss: 7.114293043564146e-10
+output loss: 1.2183918424949619e-14
+Color loss:  375.7848815917969
+(iteration 100):  100.0 correct
+expl loss: 7.172737404026464e-10
+output loss: 1.230834925896717e-14
+Color loss:  377.5650329589844
+(iteration 101):  100.0 correct
+expl loss: 6.916644479382228e-10
+output loss: 1.2379490709174112e-14
+Color loss:  379.2973327636719
+(iteration 102):  100.0 correct
+expl loss: 6.977902144988946e-10
+output loss: 1.3208476772454212e-14
+Color loss:  381.12139892578125
+(iteration 103):  100.0 correct
+expl loss: 7.251171330047157e-10
+output loss: 1.3161751893984823e-14
+Color loss:  382.81951904296875
+(iteration 104):  100.0 correct
+expl loss: 7.052596839862701e-10
+output loss: 1.3810826465202215e-14
+Color loss:  384.4769592285156
+(iteration 105):  100.0 correct
+expl loss: 7.107280874940614e-10
+output loss: 1.3884676726774476e-14
+Color loss:  386.0674743652344
+(iteration 106):  100.0 correct
+expl loss: 6.855191414523176e-10
+output loss: 1.4026057537099533e-14
+Color loss:  387.4504699707031
+(iteration 107):  100.0 correct
+expl loss: 7.048828742917124e-10
+output loss: 1.412024505973537e-14
+Color loss:  388.8711853027344
+(iteration 108):  100.0 correct
+expl loss: 7.3943584588676e-10
+output loss: 1.50406437657161e-14
+Color loss:  390.3198547363281
+(iteration 109):  100.0 correct
+expl loss: 6.949392172828084e-10
+output loss: 1.6015089102962288e-14
+Color loss:  391.6012268066406
+(iteration 110):  100.0 correct
+expl loss: 6.775157657123998e-10
+output loss: 1.6215978212996696e-14
+Color loss:  392.8369445800781
+(iteration 111):  100.0 correct
+expl loss: 6.96958102341938e-10
+output loss: 1.7336867076493678e-14
+Color loss:  394.0617980957031
+(iteration 112):  100.0 correct
+expl loss: 7.166487403509336e-10
+output loss: 1.9356789933942797e-14
+Color loss:  395.3975524902344
+(iteration 113):  100.0 correct
+expl loss: 6.964101517681343e-10
+output loss: 1.961374923695365e-14
+Color loss:  397.0110168457031
+(iteration 114):  100.0 correct
+expl loss: 7.132842094748071e-10
+output loss: 2.1764296433330645e-14
+Color loss:  398.7779846191406
+(iteration 115):  100.0 correct
+expl loss: 6.964361864980617e-10
+output loss: 2.4550423272009375e-14
+Color loss:  400.4809265136719
+(iteration 116):  100.0 correct
+expl loss: 7.169356219804968e-10
+output loss: 2.6336670068101767e-14
+Color loss:  401.99432373046875
+(iteration 117):  100.0 correct
+expl loss: 6.980461764172219e-10
+output loss: 3.041532005637962e-14
+Color loss:  403.43634033203125
+(iteration 118):  100.0 correct
+expl loss: 6.926761386694125e-10
+output loss: 3.3746998793528216e-14
+Color loss:  404.918701171875
+(iteration 119):  100.0 correct
+expl loss: 6.941232588708601e-10
+output loss: 3.71971435586798e-14
+Color loss:  406.5336608886719
+(iteration 120):  100.0 correct
+expl loss: 6.939476215883644e-10
+output loss: 4.22262797102578e-14
+Color loss:  407.9713439941406
+(iteration 121):  100.0 correct
+expl loss: 7.005312996355428e-10
+output loss: 4.743676900397474e-14
+Color loss:  409.6335754394531
+(iteration 122):  100.0 correct
+expl loss: 6.876147429224488e-10
+output loss: 4.9551203797678495e-14
+Color loss:  411.2897033691406
+(iteration 123):  100.0 correct
+expl loss: 6.853090317449073e-10
+output loss: 5.287065476720053e-14
+Color loss:  412.8327941894531
+(iteration 124):  100.0 correct
+expl loss: 6.782182593312314e-10
+output loss: 5.5151975380304114e-14
+Color loss:  414.2237243652344
+(iteration 125):  100.0 correct
+expl loss: 7.014388514470227e-10
+output loss: 5.733851978287352e-14
+Color loss:  415.3633117675781
+(iteration 126):  100.0 correct
+expl loss: 7.052904926752035e-10
+output loss: 5.904677517331453e-14
+Color loss:  416.5079040527344
+(iteration 127):  100.0 correct
+expl loss: 6.895086168690057e-10
+output loss: 5.5722414800830206e-14
+Color loss:  417.6629943847656
+(iteration 128):  100.0 correct
+expl loss: 6.852188816353078e-10
+output loss: 5.5404936687803927e-14
+Color loss:  418.7577209472656
+(iteration 129):  100.0 correct
+expl loss: 6.986691225563391e-10
+output loss: 5.3411502244681344e-14
+Color loss:  419.98016357421875
+(iteration 130):  100.0 correct
+expl loss: 6.880092606742494e-10
+output loss: 5.322294254622717e-14
+Color loss:  421.2774963378906
+(iteration 131):  100.0 correct
+expl loss: 7.187805350916676e-10
+output loss: 5.305614481825385e-14
+Color loss:  422.609130859375
+(iteration 132):  100.0 correct
+expl loss: 7.029174464712185e-10
+output loss: 4.950815419516724e-14
+Color loss:  423.950927734375
+(iteration 133):  100.0 correct
+expl loss: 6.628654292128999e-10
+output loss: 4.7784425206845796e-14
+Color loss:  425.3443908691406
+(iteration 134):  100.0 correct
+expl loss: 6.996195289765694e-10
+output loss: 4.610222793799412e-14
+Color loss:  426.7767333984375
+(iteration 135):  100.0 correct
+expl loss: 7.096184195809485e-10
+output loss: 4.571343642707261e-14
+Color loss:  428.10296630859375
+(iteration 136):  100.0 correct
+expl loss: 6.816111564056371e-10
+output loss: 4.226704571194326e-14
+Color loss:  429.2224426269531
+(iteration 137):  100.0 correct
+expl loss: 6.849774081274518e-10
+output loss: 4.2127949349476945e-14
+Color loss:  430.47515869140625
+(iteration 138):  100.0 correct
+expl loss: 6.744877989461884e-10
+output loss: 4.070562517697468e-14
+Color loss:  431.967041015625
+(iteration 139):  100.0 correct
+expl loss: 6.804551366812461e-10
+output loss: 4.063315981427118e-14
+Color loss:  433.3759460449219
+(iteration 140):  100.0 correct
+expl loss: 7.00060620584253e-10
+output loss: 4.049613021219617e-14
+Color loss:  434.7561340332031
+(iteration 141):  100.0 correct
+expl loss: 6.784344752652771e-10
+output loss: 3.87917203513357e-14
+Color loss:  436.26995849609375
+(iteration 142):  100.0 correct
+expl loss: 6.626943438448052e-10
+output loss: 3.862248316847429e-14
+Color loss:  437.73602294921875
+(iteration 143):  100.0 correct
+expl loss: 6.914146477576821e-10
+output loss: 3.7259766398536204e-14
+Color loss:  439.15386962890625
+(iteration 144):  100.0 correct
+expl loss: 6.605116453783921e-10
+output loss: 3.6790459323780486e-14
+Color loss:  440.6772766113281
+(iteration 145):  100.0 correct
+expl loss: 7.024288928292322e-10
+output loss: 3.539221121577098e-14
+Color loss:  442.24822998046875
+(iteration 146):  100.0 correct
+expl loss: 6.851998413104354e-10
+output loss: 3.555480766032591e-14
+Color loss:  443.80950927734375
+(iteration 147):  100.0 correct
+expl loss: 6.970870547462482e-10
+output loss: 3.8361874847526664e-14
+Color loss:  445.38909912109375
+(iteration 148):  100.0 correct
+expl loss: 6.765625282234566e-10
+output loss: 3.876877931099226e-14
+Color loss:  446.8283996582031
+(iteration 149):  100.0 correct
+expl loss: 6.843794975175399e-10
+output loss: 3.8896779541849544e-14
+Color loss:  448.10919189453125
+(iteration 150):  100.0 correct
+expl loss: 6.78382849894632e-10
+output loss: 4.047840011854424e-14
+Color loss:  449.37078857421875
+(iteration 151):  100.0 correct
+expl loss: 6.871898605709248e-10
+output loss: 4.0631455583981305e-14
+Color loss:  450.5054931640625
+(iteration 152):  100.0 correct
+expl loss: 6.83905432286025e-10
+output loss: 3.878750890352195e-14
+Color loss:  451.487548828125
+(iteration 153):  100.0 correct
+expl loss: 6.802245988701827e-10
+output loss: 3.566876069678593e-14
+Color loss:  452.62255859375
+(iteration 154):  100.0 correct
+expl loss: 7.016836556239525e-10
+output loss: 3.5252006934209656e-14
+Color loss:  453.8329772949219
+(iteration 155):  100.0 correct
+expl loss: 6.762135296156657e-10
+output loss: 3.366093685795539e-14
+Color loss:  455.01544189453125
+(iteration 156):  100.0 correct
+expl loss: 6.910245708979801e-10
+output loss: 3.371713918807161e-14
+Color loss:  456.30438232421875
+(iteration 157):  100.0 correct
+expl loss: 6.959219311930553e-10
+output loss: 3.4019143703217444e-14
+Color loss:  457.4964599609375
+(iteration 158):  100.0 correct
+expl loss: 6.997852297629947e-10
+output loss: 3.6981421207673074e-14
+Color loss:  458.6526184082031
+(iteration 159):  100.0 correct
+expl loss: 6.698651633385566e-10
+output loss: 3.865425706839169e-14
+Color loss:  459.83343505859375
+(iteration 160):  100.0 correct
+expl loss: 6.737927438216218e-10
+output loss: 3.908871381956558e-14
+Color loss:  461.05401611328125
+(iteration 161):  100.0 correct
+expl loss: 6.848134836978659e-10
+output loss: 4.377434761784586e-14
+Color loss:  462.3404846191406
+(iteration 162):  100.0 correct
+expl loss: 6.722619683152686e-10
+output loss: 4.552330463546833e-14
+Color loss:  463.6656799316406
+(iteration 163):  100.0 correct
+expl loss: 6.972339927635574e-10
+output loss: 4.5570728316119205e-14
+Color loss:  465.18426513671875
+(iteration 164):  100.0 correct
+expl loss: 6.807308050582606e-10
+output loss: 4.753122334198896e-14
+Color loss:  466.5684814453125
+(iteration 165):  100.0 correct
+expl loss: 6.870903290767671e-10
+output loss: 4.990051679699438e-14
+Color loss:  467.93218994140625
+(iteration 166):  100.0 correct
+expl loss: 6.860783607898213e-10
+output loss: 5.200893088050905e-14
+Color loss:  469.1570129394531
+(iteration 167):  100.0 correct
+expl loss: 6.825049969627628e-10
+output loss: 5.766957413997839e-14
+Color loss:  470.12225341796875
+(iteration 168):  100.0 correct
+expl loss: 6.705949129326427e-10
+output loss: 6.024521159719853e-14
+Color loss:  471.2424011230469
+(iteration 169):  100.0 correct
+expl loss: 6.958610354601547e-10
+output loss: 6.668180818712038e-14
+Color loss:  472.3164367675781
+(iteration 170):  100.0 correct
+expl loss: 6.868479118793402e-10
+output loss: 6.965096359910772e-14
+Color loss:  473.3768310546875
+(iteration 171):  100.0 correct
+expl loss: 6.671414531922437e-10
+output loss: 7.234000182730627e-14
+Color loss:  474.4765930175781
+(iteration 172):  100.0 correct
+expl loss: 6.914661065948735e-10
+output loss: 7.505731062715237e-14
+Color loss:  475.7363586425781
+(iteration 173):  100.0 correct
+expl loss: 6.689285791949828e-10
+output loss: 7.952000874184711e-14
+Color loss:  476.9291687011719
+(iteration 174):  100.0 correct
+expl loss: 6.785295658673363e-10
+output loss: 7.928993426458211e-14
+Color loss:  478.0264892578125
+(iteration 175):  100.0 correct
+expl loss: 6.775532357394809e-10
+output loss: 7.893968952902425e-14
+Color loss:  479.1210632324219
+(iteration 176):  100.0 correct
+expl loss: 6.862206913815783e-10
+output loss: 7.663275802772748e-14
+Color loss:  480.2507629394531
+(iteration 177):  100.0 correct
+expl loss: 6.875330860189877e-10
+output loss: 7.861646175635201e-14
+Color loss:  481.33917236328125
+(iteration 178):  100.0 correct
+expl loss: 6.817640896272792e-10
+output loss: 7.195935199707376e-14
+Color loss:  482.4635925292969
+(iteration 179):  100.0 correct
+expl loss: 6.722437606576648e-10
+output loss: 6.908404105937863e-14
+Color loss:  483.46148681640625
+(iteration 180):  100.0 correct
+expl loss: 6.936207719299148e-10
+output loss: 6.921432827919349e-14
+Color loss:  484.7397155761719
+(iteration 181):  100.0 correct
+expl loss: 6.583253941983003e-10
+output loss: 7.16691720618716e-14
+Color loss:  486.1260070800781
+(iteration 182):  100.0 correct
+expl loss: 6.537488883573417e-10
+output loss: 7.796552710078244e-14
+Color loss:  487.5655517578125
+(iteration 183):  100.0 correct
+expl loss: 7.011215497065848e-10
+output loss: 7.86557369800503e-14
+Color loss:  489.1383972167969
+(iteration 184):  100.0 correct
+expl loss: 6.828615450871212e-10
+output loss: 8.336024606052719e-14
+Color loss:  490.565673828125
+(iteration 185):  100.0 correct
+expl loss: 6.658439910545155e-10
+output loss: 8.808013725932623e-14
+Color loss:  492.1979675292969
+(iteration 186):  100.0 correct
+expl loss: 6.634454652321153e-10
+output loss: 8.600654639433908e-14
+Color loss:  493.8694763183594
+(iteration 187):  100.0 correct
+expl loss: 6.633470439609823e-10
+output loss: 9.290676816200646e-14
+Color loss:  495.3326110839844
+(iteration 188):  100.0 correct
+expl loss: 6.871941904407208e-10
+output loss: 9.845929274795648e-14
+Color loss:  496.92535400390625
+(iteration 189):  100.0 correct
+expl loss: 6.573853683633502e-10
+output loss: 1.0366672933493151e-13
+Color loss:  498.561767578125
+(iteration 190):  100.0 correct
+expl loss: 6.66971089469115e-10
+output loss: 1.0410292419771316e-13
+Color loss:  500.2435607910156
+(iteration 191):  100.0 correct
+expl loss: 6.72011224445157e-10
+output loss: 1.0963772885440662e-13
+Color loss:  501.86572265625
+(iteration 192):  100.0 correct
+expl loss: 6.710119682118432e-10
+output loss: 1.1253980603323499e-13
+Color loss:  503.494384765625
+(iteration 193):  100.0 correct
+expl loss: 6.84176215681731e-10
+output loss: 1.1764283395099967e-13
+Color loss:  505.14715576171875
+(iteration 194):  100.0 correct
+expl loss: 6.613955494394474e-10
+output loss: 1.20995634301721e-13
+Color loss:  506.8099060058594
+(iteration 195):  100.0 correct
+expl loss: 6.954906650591397e-10
+output loss: 1.2359025207322322e-13
+Color loss:  508.3401184082031
+(iteration 196):  100.0 correct
+expl loss: 6.52596532368932e-10
+output loss: 1.2933699792584685e-13
+Color loss:  509.7498779296875
+(iteration 197):  100.0 correct
+expl loss: 6.570342603318124e-10
+output loss: 1.3491867399770957e-13
+Color loss:  511.0778503417969
+(iteration 198):  100.0 correct
+expl loss: 6.932822094185553e-10
+output loss: 1.348558851393955e-13
+Color loss:  512.5824584960938
+(iteration 199):  100.0 correct
+expl loss: 6.730817569966518e-10
+output loss: 1.3527960490093e-13
+Color loss:  514.1062622070312
+(iteration 200):  100.0 correct
+expl loss: 6.58066323655504e-10
+output loss: 1.4146317580884804e-13
+Color loss:  515.6119384765625
+(iteration 201):  100.0 correct
+expl loss: 6.547656861144446e-10
+output loss: 1.5118165237488351e-13
+Color loss:  517.138671875
+(iteration 202):  100.0 correct
+expl loss: 6.627732251907048e-10
+output loss: 1.5934668406818175e-13
+Color loss:  518.7111206054688
+(iteration 203):  100.0 correct
+expl loss: 6.546600483936516e-10
+output loss: 1.7970580535806024e-13
+Color loss:  520.1197509765625
+(iteration 204):  100.0 correct
+expl loss: 6.531479246341121e-10
+output loss: 1.91935280603045e-13
+Color loss:  521.5470581054688
+(iteration 205):  100.0 correct
+expl loss: 6.635427762802237e-10
+output loss: 2.0930448400933305e-13
+Color loss:  522.8798828125
+(iteration 206):  100.0 correct
+expl loss: 6.634743865419068e-10
+output loss: 2.345182696043141e-13
+Color loss:  524.2552490234375
+(iteration 207):  100.0 correct
+expl loss: 6.645843875219271e-10
+output loss: 2.499631632322391e-13
+Color loss:  525.7493896484375
+(iteration 208):  100.0 correct
+expl loss: 6.958904563703072e-10
+output loss: 2.720850888343618e-13
+Color loss:  527.2798461914062
+(iteration 209):  100.0 correct
+expl loss: 6.577149380682101e-10
+output loss: 3.116553781538911e-13
+Color loss:  529.0160522460938
+(iteration 210):  100.0 correct
+expl loss: 6.529782270447981e-10
+output loss: 3.45714179939699e-13
+Color loss:  530.7190551757812
+(iteration 211):  100.0 correct
+expl loss: 6.623608328482078e-10
+output loss: 3.969606219254851e-13
+Color loss:  532.2359008789062
+(iteration 212):  100.0 correct
+expl loss: 6.386149387083151e-10
+output loss: 4.4446309696924424e-13
+Color loss:  533.7330932617188
+(iteration 213):  100.0 correct
+expl loss: 6.538484198514993e-10
+output loss: 5.003989844015733e-13
+Color loss:  535.29296875
+(iteration 214):  100.0 correct
+expl loss: 6.650600070656765e-10
+output loss: 5.659897463899943e-13
+Color loss:  536.7109985351562
+(iteration 215):  100.0 correct
+expl loss: 6.626891257965895e-10
+output loss: 6.210227102530774e-13
+Color loss:  538.0223388671875
+(iteration 216):  100.0 correct
+expl loss: 6.659102158579344e-10
+output loss: 7.10297489228684e-13
+Color loss:  539.1614990234375
+(iteration 217):  100.0 correct
+expl loss: 6.755048187478963e-10
+output loss: 8.33756078500586e-13
+Color loss:  540.1900634765625
+(iteration 218):  100.0 correct
+expl loss: 6.811062269740376e-10
+output loss: 9.252159585346198e-13
+Color loss:  541.2754516601562
+(iteration 219):  100.0 correct
+expl loss: 6.517863471167118e-10
+output loss: 9.79284687195603e-13
+Color loss:  542.2919311523438
+(iteration 220):  100.0 correct
+expl loss: 6.489399573261778e-10
+output loss: 1.03506027533673e-12
+Color loss:  543.1910400390625
+(iteration 221):  100.0 correct
+expl loss: 6.723588907853184e-10
+output loss: 1.0316865634366068e-12
+Color loss:  544.0057373046875
+(iteration 222):  100.0 correct
+expl loss: 6.494346171947996e-10
+output loss: 9.96758014668031e-13
+Color loss:  544.9749145507812
+(iteration 223):  100.0 correct
+expl loss: 6.617932313268682e-10
+output loss: 9.680912755466453e-13
+Color loss:  545.9503784179688
+(iteration 224):  100.0 correct
+expl loss: 6.738942182060725e-10
+output loss: 9.45355447569407e-13
+Color loss:  546.803466796875
+(iteration 225):  100.0 correct
+expl loss: 6.600705537707086e-10
+output loss: 9.543171374665205e-13
+Color loss:  547.7166748046875
+(iteration 226):  100.0 correct
+expl loss: 6.412816389023135e-10
+output loss: 9.622037324893973e-13
+Color loss:  548.3356323242188
+(iteration 227):  100.0 correct
+expl loss: 6.616839298700938e-10
+output loss: 9.784486589003993e-13
+Color loss:  549.0682373046875
+(iteration 228):  100.0 correct
+expl loss: 6.570959887319816e-10
+output loss: 9.9049230189302e-13
+Color loss:  549.9818725585938
+(iteration 229):  100.0 correct
+expl loss: 6.490670223513462e-10
+output loss: 9.675543786308305e-13
+Color loss:  551.0770874023438
+(iteration 230):  100.0 correct
+expl loss: 6.583444900343238e-10
+output loss: 9.283101631146762e-13
+Color loss:  552.07958984375
+(iteration 231):  100.0 correct
+expl loss: 6.433746868594881e-10
+output loss: 8.986086072297617e-13
+Color loss:  552.986328125
+(iteration 232):  100.0 correct
+expl loss: 6.665502594316308e-10
+output loss: 8.735383293448362e-13
+Color loss:  553.7429809570312
+(iteration 233):  100.0 correct
+expl loss: 6.435798560744388e-10
+output loss: 8.501288865578327e-13
+Color loss:  554.6597900390625
+(iteration 234):  100.0 correct
+expl loss: 6.60670518293216e-10
+output loss: 8.454841102407962e-13
+Color loss:  555.6157836914062
+(iteration 235):  100.0 correct
+expl loss: 6.442079092394692e-10
+output loss: 8.474811022222972e-13
+Color loss:  556.610595703125
+(iteration 236):  100.0 correct
+expl loss: 6.68419264382436e-10
+output loss: 8.719269338659796e-13
+Color loss:  557.9505615234375
+(iteration 237):  100.0 correct
+expl loss: 6.412800290789278e-10
+output loss: 8.6955475372269e-13
+Color loss:  559.238525390625
+(iteration 238):  100.0 correct
+expl loss: 6.523890871967808e-10
+output loss: 8.564581335801513e-13
+Color loss:  560.5170288085938
+(iteration 239):  100.0 correct
+expl loss: 6.357380732957552e-10
+output loss: 8.77714730323359e-13
+Color loss:  561.7080078125
+(iteration 240):  100.0 correct
+expl loss: 6.343908731665238e-10
+output loss: 9.002293810574102e-13
+Color loss:  562.7559814453125
+(iteration 241):  100.0 correct
+expl loss: 6.511464145653179e-10
+output loss: 9.362783985611411e-13
+Color loss:  563.8911743164062
+(iteration 242):  100.0 correct
+expl loss: 6.507251959497751e-10
+output loss: 9.860248468412935e-13
+Color loss:  564.9859619140625
+(iteration 243):  100.0 correct
+expl loss: 6.589289114344865e-10
+output loss: 1.001498688667224e-12
+Color loss:  566.1107177734375
+(iteration 244):  100.0 correct
+expl loss: 6.353448323004329e-10
+output loss: 1.0129153375434963e-12
+Color loss:  566.9974975585938
+(iteration 245):  100.0 correct
+expl loss: 6.470266544766901e-10
+output loss: 9.977087515530836e-13
+Color loss:  567.8084716796875
+(iteration 246):  100.0 correct
+expl loss: 6.549233932950926e-10
+output loss: 9.99186410693964e-13
+Color loss:  568.7518920898438
+(iteration 247):  100.0 correct
+expl loss: 6.46262598991143e-10
+output loss: 1.0023934807201762e-12
+Color loss:  569.573486328125
+(iteration 248):  100.0 correct
+expl loss: 6.524256690454422e-10
+output loss: 1.0237483603903197e-12
+Color loss:  570.3380737304688
+(iteration 249):  100.0 correct
+expl loss: 6.508655281400877e-10
+output loss: 1.0571310537013656e-12
+Color loss:  571.1695556640625
+(iteration 250):  100.0 correct
+expl loss: 6.6499389328456e-10
+output loss: 1.1298522881175721e-12
+Color loss:  572.0663452148438
+(iteration 251):  100.0 correct
+expl loss: 6.63761046126865e-10
+output loss: 1.1803119245867855e-12
+Color loss:  572.9125366210938
+(iteration 252):  100.0 correct
+expl loss: 6.48446241147127e-10
+output loss: 1.2718533908342988e-12
+Color loss:  573.8014526367188
+(iteration 253):  100.0 correct
+expl loss: 6.46255882141844e-10
+output loss: 1.3385300897186814e-12
+Color loss:  574.750244140625
+(iteration 254):  100.0 correct
+expl loss: 6.513699024601749e-10
+output loss: 1.4402534069882234e-12
+Color loss:  575.7796020507812
+(iteration 255):  100.0 correct
+expl loss: 6.396299045974274e-10
+output loss: 1.5463444327096232e-12
+Color loss:  576.9848022460938
+(iteration 256):  100.0 correct
+expl loss: 6.421338460960158e-10
+output loss: 1.6988710785370564e-12
+Color loss:  578.0120849609375
+(iteration 257):  100.0 correct
+expl loss: 6.199314395161082e-10
+output loss: 1.8049370591882719e-12
+Color loss:  579.0440063476562
+(iteration 258):  100.0 correct
+expl loss: 6.270036156941217e-10
+output loss: 1.8816283166994685e-12
+Color loss:  580.006103515625
+(iteration 259):  100.0 correct
+expl loss: 6.35951902250298e-10
+output loss: 1.9714032923473512e-12
+Color loss:  580.8849487304688
+(iteration 260):  100.0 correct
+expl loss: 6.440724065193137e-10
+output loss: 2.020386895978943e-12
+Color loss:  581.6868896484375
+(iteration 261):  100.0 correct
+expl loss: 6.440654121142586e-10
+output loss: 1.998227104615946e-12
+Color loss:  582.534423828125
+(iteration 262):  100.0 correct
+expl loss: 6.57251864044639e-10
+output loss: 1.911630142376053e-12
+Color loss:  583.3088989257812
+(iteration 263):  100.0 correct
+expl loss: 6.477771652413367e-10
+output loss: 1.8048370957479687e-12
+Color loss:  584.0659790039062
+(iteration 264):  100.0 correct
+expl loss: 6.353709225415116e-10
+output loss: 1.7722600730712967e-12
+Color loss:  584.8340454101562
+(iteration 265):  100.0 correct
+expl loss: 6.630261339957144e-10
+output loss: 1.7647361436751163e-12
+Color loss:  585.6203002929688
+(iteration 266):  100.0 correct
+expl loss: 6.387513851180415e-10
+output loss: 1.897498651259877e-12
+Color loss:  586.17919921875
+(iteration 267):  100.0 correct
+expl loss: 6.371172478480958e-10
+output loss: 2.107252523517178e-12
+Color loss:  586.5626220703125
+(iteration 268):  100.0 correct
+expl loss: 6.398579999178367e-10
+output loss: 2.4294789270629114e-12
+Color loss:  587.0466918945312
+(iteration 269):  100.0 correct
+expl loss: 6.563565801975813e-10
+output loss: 2.765338739246781e-12
+Color loss:  587.5130615234375
+(iteration 270):  100.0 correct
+expl loss: 6.546304054388941e-10
+output loss: 3.1936265697946054e-12
+Color loss:  587.881103515625
+(iteration 271):  100.0 correct
+expl loss: 6.395102225553728e-10
+output loss: 3.662424530315178e-12
+Color loss:  588.5448608398438
+(iteration 272):  100.0 correct
+expl loss: 6.501613691867192e-10
+output loss: 4.017181119003732e-12
+Color loss:  589.2117309570312
+(iteration 273):  100.0 correct
+expl loss: 6.560796350640885e-10
+output loss: 4.220762628293073e-12
+Color loss:  589.89501953125
+(iteration 274):  100.0 correct
+expl loss: 6.531047924696054e-10
+output loss: 4.438428791164739e-12
+Color loss:  590.6149291992188
+(iteration 275):  100.0 correct
+expl loss: 6.375859284979413e-10
+output loss: 4.621187547210193e-12
+Color loss:  591.3573608398438
+(iteration 276):  100.0 correct
+expl loss: 6.427458565383404e-10
+output loss: 4.4324205764056934e-12
+Color loss:  592.1290283203125
+(iteration 277):  100.0 correct
+expl loss: 6.3910748915319e-10
+output loss: 4.238310223614317e-12
+Color loss:  592.9041137695312
+(iteration 278):  100.0 correct
+expl loss: 6.381854489312389e-10
+output loss: 4.08460158057844e-12
+Color loss:  593.5892333984375
+(iteration 279):  100.0 correct
+expl loss: 6.429083376779943e-10
+output loss: 3.934153350315661e-12
+Color loss:  594.39306640625
+(iteration 280):  100.0 correct
+expl loss: 6.293914833754854e-10
+output loss: 3.804530475381984e-12
+Color loss:  595.1880493164062
+(iteration 281):  100.0 correct
+expl loss: 6.406730701513652e-10
+output loss: 3.623959422480172e-12
+Color loss:  596.0789794921875
+(iteration 282):  100.0 correct
+expl loss: 6.162428900502448e-10
+output loss: 3.417170192643315e-12
+Color loss:  597.0159912109375
+(iteration 283):  100.0 correct
+expl loss: 6.367531502071699e-10
+output loss: 3.0835659546590843e-12
+Color loss:  597.93603515625
+(iteration 284):  100.0 correct
+expl loss: 6.32708496706158e-10
+output loss: 2.8052783620363675e-12
+Color loss:  598.8951416015625
+(iteration 285):  100.0 correct
+expl loss: 6.36019847899405e-10
+output loss: 2.66852837570164e-12
+Color loss:  599.802490234375
+(iteration 286):  100.0 correct
+expl loss: 6.189753709584522e-10
+output loss: 2.5664804483016557e-12
+Color loss:  600.7325439453125
+(iteration 287):  100.0 correct
+expl loss: 6.446225775391667e-10
+output loss: 2.67480200315251e-12
+Color loss:  601.57568359375
+(iteration 288):  100.0 correct
+expl loss: 6.373781502588827e-10
+output loss: 2.8077598839687523e-12
+Color loss:  602.4812622070312
+(iteration 289):  100.0 correct
+expl loss: 6.292910081917569e-10
+output loss: 2.9137751239582954e-12
+Color loss:  603.3603515625
+(iteration 290):  100.0 correct
+expl loss: 6.393229834422698e-10
+output loss: 3.0550334397666523e-12
+Color loss:  604.4918823242188
+(iteration 291):  100.0 correct
+expl loss: 6.173032640610643e-10
+output loss: 3.269427046800888e-12
+Color loss:  605.6069946289062
+(iteration 292):  100.0 correct
+expl loss: 6.578905753507058e-10
+output loss: 3.559989759580051e-12
+Color loss:  606.639404296875
+(iteration 293):  100.0 correct
+expl loss: 6.356609683066949e-10
+output loss: 3.851807327953649e-12
+Color loss:  607.7467651367188
+(iteration 294):  100.0 correct
+expl loss: 6.396807528119552e-10
+output loss: 4.0370489069740945e-12
+Color loss:  608.895751953125
+(iteration 295):  100.0 correct
+expl loss: 6.302414146119872e-10
+output loss: 4.145587952780749e-12
+Color loss:  610.0066528320312
+(iteration 296):  100.0 correct
+expl loss: 6.443575673031887e-10
+output loss: 4.147036880564059e-12
+Color loss:  611.11279296875
+(iteration 297):  100.0 correct
+expl loss: 6.246606010229527e-10
+output loss: 4.108353848092383e-12
+Color loss:  612.148681640625
+(iteration 298):  100.0 correct
+expl loss: 6.31319607702352e-10
+output loss: 4.020490971395896e-12
+Color loss:  612.978271484375
+(iteration 299):  100.0 correct
+expl loss: 6.356164483634075e-10
+output loss: 4.055482512310693e-12
+Color loss:  613.811279296875
+(iteration 300):  100.0 correct
+expl loss: 6.266714369651538e-10
+output loss: 4.13079813410544e-12
+Color loss:  614.488525390625
+(iteration 301):  100.0 correct
+expl loss: 6.3333210897909e-10
+output loss: 4.360698434291432e-12
+Color loss:  615.0918579101562
+(iteration 302):  100.0 correct
+expl loss: 6.437292920935533e-10
+output loss: 4.312377711868098e-12
+Color loss:  615.620849609375
+(iteration 303):  100.0 correct
+expl loss: 6.218462411666792e-10
+output loss: 4.213993737289812e-12
+Color loss:  616.2167358398438
+(iteration 304):  100.0 correct
+expl loss: 6.266684393629873e-10
+output loss: 4.230130568744217e-12
+Color loss:  616.678955078125
+(iteration 305):  100.0 correct
+expl loss: 6.146263498152393e-10
+output loss: 4.315922185610388e-12
+Color loss:  617.1869506835938
+(iteration 306):  100.0 correct
+expl loss: 6.431022381292451e-10
+output loss: 4.374944417157023e-12
+Color loss:  617.693603515625
+(iteration 307):  100.0 correct
+expl loss: 6.157951926155647e-10
+output loss: 4.512046552357374e-12
+Color loss:  618.195556640625
+(iteration 308):  100.0 correct
+expl loss: 6.169487143381502e-10
+output loss: 4.679507649429926e-12
+Color loss:  618.8499145507812
+(iteration 309):  100.0 correct
+expl loss: 6.481775116640165e-10
+output loss: 4.946224853308312e-12
+Color loss:  619.6425170898438
+(iteration 310):  100.0 correct
+expl loss: 6.091748216974224e-10
+output loss: 4.86985061651235e-12
+Color loss:  620.3997802734375
+(iteration 311):  100.0 correct
+expl loss: 6.326320023397614e-10
+output loss: 4.7758724058821755e-12
+Color loss:  621.292236328125
+(iteration 312):  100.0 correct
+expl loss: 6.405038166512611e-10
+output loss: 4.699543705577458e-12
+Color loss:  622.2103271484375
+(iteration 313):  100.0 correct
+expl loss: 6.36964869737966e-10
+output loss: 4.512992844013519e-12
+Color loss:  622.9065551757812
+(iteration 314):  100.0 correct
+expl loss: 6.547790643018914e-10
+output loss: 4.2863377777702105e-12
+Color loss:  623.6813354492188
+(iteration 315):  100.0 correct
+expl loss: 6.427245402562676e-10
+output loss: 4.124070009103864e-12
+Color loss:  624.38134765625
+(iteration 316):  100.0 correct
+expl loss: 6.254435302999184e-10
+output loss: 3.9867232778934e-12
+Color loss:  625.064453125
+(iteration 317):  100.0 correct
+expl loss: 6.298974120078071e-10
+output loss: 3.866046371925336e-12
+Color loss:  625.6271362304688
+(iteration 318):  100.0 correct
+expl loss: 6.289580523066718e-10
+output loss: 3.7990526523257184e-12
+Color loss:  625.991943359375
+(iteration 319):  100.0 correct
+expl loss: 6.263422558383525e-10
+output loss: 3.73737152337128e-12
+Color loss:  626.3301391601562
+(iteration 320):  100.0 correct
+expl loss: 6.274569197550761e-10
+output loss: 3.736182804109367e-12
+Color loss:  626.4345092773438
+(iteration 321):  100.0 correct
+expl loss: 6.353220727284281e-10
+output loss: 3.775606997186154e-12
+Color loss:  626.540283203125
+(iteration 322):  100.0 correct
+expl loss: 6.25877183413337e-10
+output loss: 3.673113896374147e-12
+Color loss:  626.5972900390625
+(iteration 323):  100.0 correct
+expl loss: 6.382377959468499e-10
+output loss: 3.5228788202584793e-12
+Color loss:  626.7409057617188
+(iteration 324):  100.0 correct
+expl loss: 6.264618823692558e-10
+output loss: 3.4676124818777687e-12
+Color loss:  627.1082153320312
+(iteration 325):  100.0 correct
+expl loss: 6.144860731360779e-10
+output loss: 3.3625610976195652e-12
+Color loss:  627.3148193359375
+(iteration 326):  100.0 correct
+expl loss: 6.167987787186746e-10
+output loss: 3.2250077174750258e-12
+Color loss:  627.5719604492188
+(iteration 327):  100.0 correct
+expl loss: 6.266894225781527e-10
+output loss: 3.0266577005083617e-12
+Color loss:  627.947021484375
+(iteration 328):  100.0 correct
+expl loss: 6.066298574580742e-10
+output loss: 2.900929062937818e-12
+Color loss:  628.2351684570312
+(iteration 329):  100.0 correct
+expl loss: 6.297619092876516e-10
+output loss: 2.7212869544573914e-12
+Color loss:  628.5584106445312
+(iteration 330):  100.0 correct
+expl loss: 6.478244052310345e-10
+output loss: 2.504177637821514e-12
+Color loss:  628.8987426757812
+(iteration 331):  100.0 correct
+expl loss: 6.134067698226886e-10
+output loss: 2.371324057254265e-12
+Color loss:  629.3462524414062
+(iteration 332):  100.0 correct
+expl loss: 6.186547385489405e-10
+output loss: 2.2101871114538207e-12
+Color loss:  630.0569458007812
+(iteration 333):  100.0 correct
+expl loss: 6.080899117577587e-10
+output loss: 2.0089856427735198e-12
+Color loss:  630.7294921875
+(iteration 334):  100.0 correct
+expl loss: 6.117112927306323e-10
+output loss: 1.7501575275830072e-12
+Color loss:  631.310546875
+(iteration 335):  100.0 correct
+expl loss: 6.23647467001831e-10
+output loss: 1.5512736494666113e-12
+Color loss:  631.8649291992188
+(iteration 336):  100.0 correct
+expl loss: 6.342081859678217e-10
+output loss: 1.3519831955355333e-12
+Color loss:  632.360107421875
+(iteration 337):  100.0 correct
+expl loss: 6.222602433325619e-10
+output loss: 1.1759931136529067e-12
+Color loss:  632.7507934570312
+(iteration 338):  100.0 correct
+expl loss: 6.29291507792118e-10
+output loss: 1.08361876329649e-12
+Color loss:  633.3031005859375
+(iteration 339):  100.0 correct
+expl loss: 6.379189398941776e-10
+output loss: 1.0555727299188522e-12
+Color loss:  633.8245849609375
+(iteration 340):  100.0 correct
+expl loss: 6.052806034162472e-10
+output loss: 1.0503783173104742e-12
+Color loss:  634.3792724609375
+(iteration 341):  100.0 correct
+expl loss: 6.115618567115177e-10
+output loss: 1.0552320735962573e-12
+Color loss:  634.9462890625
+(iteration 342):  100.0 correct
+expl loss: 6.225389093117428e-10
+output loss: 1.0341186457499263e-12
+Color loss:  635.4391479492188
+(iteration 343):  100.0 correct
+expl loss: 6.272234398529974e-10
+output loss: 1.0851942174733287e-12
+Color loss:  635.8927612304688
+(iteration 344):  100.0 correct
+expl loss: 6.220409742851984e-10
+output loss: 1.1619767648074486e-12
+Color loss:  636.4285888671875
+(iteration 345):  100.0 correct
+expl loss: 6.160195131776902e-10
+output loss: 1.1784732261224673e-12
+Color loss:  636.8985595703125
+(iteration 346):  100.0 correct
+expl loss: 6.103511029920128e-10
+output loss: 1.1922468221015059e-12
+Color loss:  637.3661499023438
+(iteration 347):  100.0 correct
+expl loss: 6.389918594251753e-10
+output loss: 1.1559605269523265e-12
+Color loss:  637.9600219726562
+(iteration 348):  100.0 correct
+expl loss: 6.156229415132941e-10
+output loss: 1.1701307240860603e-12
+Color loss:  638.737060546875
+(iteration 349):  100.0 correct
+expl loss: 6.228469406899251e-10
+output loss: 1.2057501264789439e-12
+Color loss:  639.591552734375
+(iteration 350):  100.0 correct
+expl loss: 6.143194286600817e-10
+output loss: 1.2395199883857844e-12
+Color loss:  640.4237670898438
+(iteration 351):  100.0 correct
+expl loss: 6.284328613048729e-10
+output loss: 1.257980698776695e-12
+Color loss:  641.1846313476562
+(iteration 352):  100.0 correct
+expl loss: 6.085709713943288e-10
+output loss: 1.2472928506007674e-12
+Color loss:  641.9631958007812
+(iteration 353):  100.0 correct
+expl loss: 6.285363896019192e-10
+output loss: 1.231050851535631e-12
+Color loss:  642.6598510742188
+(iteration 354):  100.0 correct
+expl loss: 6.189035950399102e-10
+output loss: 1.2143619443349962e-12
+Color loss:  643.3225708007812
+(iteration 355):  100.0 correct
+expl loss: 6.077935932324863e-10
+output loss: 1.2269915986018454e-12
+Color loss:  643.8892211914062
+(iteration 356):  100.0 correct
+expl loss: 6.096783078390899e-10
+output loss: 1.2882236510164402e-12
+Color loss:  644.533935546875
+(iteration 357):  100.0 correct
+expl loss: 6.353969017602878e-10
+output loss: 1.3789361362828711e-12
+Color loss:  645.2139282226562
+(iteration 358):  100.0 correct
+expl loss: 6.052288115121485e-10
+output loss: 1.443273994240768e-12
+Color loss:  645.9783325195312
+(iteration 359):  100.0 correct
+expl loss: 6.179711187215275e-10
+output loss: 1.5397404488567967e-12
+Color loss:  646.8375244140625
+(iteration 360):  100.0 correct
+expl loss: 6.160130738841474e-10
+output loss: 1.6721153541648937e-12
+Color loss:  647.7099609375
+(iteration 361):  100.0 correct
+expl loss: 6.236234861844991e-10
+output loss: 1.804306378784537e-12
+Color loss:  648.4348754882812
+(iteration 362):  100.0 correct
+expl loss: 6.280449493800688e-10
+output loss: 2.00155625580678e-12
+Color loss:  649.28271484375
+(iteration 363):  100.0 correct
+expl loss: 6.293001120205588e-10
+output loss: 2.144446946406031e-12
+Color loss:  650.1251220703125
+(iteration 364):  100.0 correct
+expl loss: 6.269424424054648e-10
+output loss: 2.350143950974326e-12
+Color loss:  650.9415283203125
+(iteration 365):  100.0 correct
+expl loss: 6.132836460892577e-10
+output loss: 2.508290667183055e-12
+Color loss:  651.7536010742188
+(iteration 366):  100.0 correct
+expl loss: 6.179569633779636e-10
+output loss: 2.6744791277455437e-12
+Color loss:  652.6121826171875
+(iteration 367):  100.0 correct
+expl loss: 6.124323825851263e-10
+output loss: 2.6765362929476177e-12
+Color loss:  653.357177734375
+(iteration 368):  100.0 correct
+expl loss: 6.373817584837127e-10
+output loss: 2.6415412825858686e-12
+Color loss:  654.016845703125
+(iteration 369):  100.0 correct
+expl loss: 5.973899708244801e-10
+output loss: 2.681757810610308e-12
+Color loss:  654.6887817382812
+(iteration 370):  100.0 correct
+expl loss: 6.073269664952363e-10
+output loss: 2.76609811444839e-12
+Color loss:  655.3919067382812
+(iteration 371):  100.0 correct
+expl loss: 6.079919900869868e-10
+output loss: 2.775689183706631e-12
+Color loss:  656.1942749023438
+(iteration 372):  100.0 correct
+expl loss: 6.113952677466727e-10
+output loss: 2.8835347738037642e-12
+Color loss:  656.8184814453125
+(iteration 373):  100.0 correct
+expl loss: 6.231381521892843e-10
+output loss: 2.9014757176731854e-12
+Color loss:  657.2587280273438
+(iteration 374):  100.0 correct
+expl loss: 6.148517806003895e-10
+output loss: 2.938776826055811e-12
+Color loss:  657.688232421875
+(iteration 375):  100.0 correct
+expl loss: 6.202177105230078e-10
+output loss: 3.020547787585537e-12
+Color loss:  658.2720947265625
+(iteration 376):  100.0 correct
+expl loss: 6.314189171519047e-10
+output loss: 3.0319587986105123e-12
+Color loss:  658.8822021484375
+(iteration 377):  100.0 correct
+expl loss: 6.201063551536379e-10
+output loss: 3.1206922896515055e-12
+Color loss:  659.484375
+(iteration 378):  100.0 correct
+expl loss: 6.171653188502546e-10
+output loss: 3.267676493973193e-12
+Color loss:  660.2400512695312
+(iteration 379):  100.0 correct
+expl loss: 6.117362727486864e-10
+output loss: 3.4063884525592503e-12
+Color loss:  661.0062866210938
+(iteration 380):  100.0 correct
+expl loss: 6.248304096345692e-10
+output loss: 3.589419993871301e-12
+Color loss:  661.8880615234375
+(iteration 381):  100.0 correct
+expl loss: 6.04842231854974e-10
+output loss: 3.849843620978843e-12
+Color loss:  662.6204223632812
+(iteration 382):  100.0 correct
+expl loss: 6.077922054537055e-10
+output loss: 4.018403231692558e-12
+Color loss:  663.2367553710938
+(iteration 383):  100.0 correct
+expl loss: 6.308528144316483e-10
+output loss: 4.175911352821693e-12
+Color loss:  663.9060668945312
+(iteration 384):  100.0 correct
+expl loss: 6.277824926570474e-10
+output loss: 4.203852543849251e-12
+Color loss:  664.6668701171875
+(iteration 385):  100.0 correct
+expl loss: 6.087522708142501e-10
+output loss: 4.225196147816801e-12
+Color loss:  665.7598266601562
+(iteration 386):  100.0 correct
+expl loss: 6.023280207934079e-10
+output loss: 4.1337506334615526e-12
+Color loss:  666.7364501953125
+(iteration 387):  100.0 correct
+expl loss: 6.062013113705689e-10
+output loss: 4.1428861209669154e-12
+Color loss:  667.6566162109375
+(iteration 388):  100.0 correct
+expl loss: 6.054551859868695e-10
+output loss: 4.209123934811876e-12
+Color loss:  668.6796264648438
+(iteration 389):  100.0 correct
+expl loss: 6.041251943145198e-10
+output loss: 4.233261310937486e-12
+Color loss:  669.6480712890625
+(iteration 390):  100.0 correct
+expl loss: 6.156790077760377e-10
+output loss: 4.286881613579929e-12
+Color loss:  670.6708984375
+(iteration 391):  100.0 correct
+expl loss: 6.559602860889413e-10
+output loss: 4.285356357963677e-12
+Color loss:  671.6273193359375
+(iteration 392):  100.0 correct
+expl loss: 6.135539853957539e-10
+output loss: 4.187576934516768e-12
+Color loss:  672.462890625
+(iteration 393):  100.0 correct
+expl loss: 6.030638211029782e-10
+output loss: 4.127536420289735e-12
+Color loss:  673.2459106445312
+(iteration 394):  100.0 correct
+expl loss: 5.974691852372871e-10
+output loss: 4.043619172139357e-12
+Color loss:  674.1840209960938
+(iteration 395):  100.0 correct
+expl loss: 5.865177232777796e-10
+output loss: 4.008642810054974e-12
+Color loss:  675.1063842773438
+(iteration 396):  100.0 correct
+expl loss: 6.170860489262964e-10
+output loss: 4.070348225138076e-12
+Color loss:  676.0844116210938
+(iteration 397):  100.0 correct
+expl loss: 6.0480598307322e-10
+output loss: 4.155087298535198e-12
+Color loss:  677.1083374023438
+(iteration 398):  100.0 correct
+expl loss: 6.050825396286541e-10
+output loss: 4.357333504428906e-12
+Color loss:  678.1050415039062
+(iteration 399):  100.0 correct
+expl loss: 6.126582019483351e-10
+output loss: 4.504348716932727e-12
+Color loss:  679.0531616210938
+(iteration 400):  100.0 correct
+expl loss: 6.072695679648632e-10
+output loss: 4.938765976042481e-12
+Color loss:  679.91650390625
+(iteration 401):  100.0 correct
+expl loss: 5.9089277915092e-10
+output loss: 5.504786730614608e-12
+Color loss:  680.6862182617188
+(iteration 402):  100.0 correct
+expl loss: 6.106891103918599e-10
+output loss: 6.0612344136845575e-12
+Color loss:  681.531982421875
+(iteration 403):  100.0 correct
+expl loss: 5.936822145002907e-10
+output loss: 6.679174140850064e-12
+Color loss:  682.341064453125
+(iteration 404):  100.0 correct
+expl loss: 6.279980979684296e-10
+output loss: 7.0308888919234924e-12
+Color loss:  683.201171875
+(iteration 405):  100.0 correct
+expl loss: 6.045868805593102e-10
+output loss: 7.259939177606256e-12
+Color loss:  684.14599609375
+(iteration 406):  100.0 correct
+expl loss: 6.127893192875433e-10
+output loss: 7.571140762940853e-12
+Color loss:  685.1279296875
+(iteration 407):  100.0 correct
+expl loss: 6.056505852392036e-10
+output loss: 7.921651182241085e-12
+Color loss:  685.9388427734375
+(iteration 408):  100.0 correct
+expl loss: 6.214821990369046e-10
+output loss: 8.474615974252142e-12
+Color loss:  686.705810546875
+(iteration 409):  100.0 correct
+expl loss: 6.238401462077547e-10
+output loss: 8.665325401668866e-12
+Color loss:  687.424560546875
+(iteration 410):  100.0 correct
+expl loss: 6.057984114349324e-10
+output loss: 8.991071775987791e-12
+Color loss:  688.1766357421875
+(iteration 411):  100.0 correct
+expl loss: 6.082677139751524e-10
+output loss: 9.23340050251742e-12
+Color loss:  688.9362182617188
+(iteration 412):  100.0 correct
+expl loss: 6.188248247163131e-10
+output loss: 9.388821317624085e-12
+Color loss:  689.4004516601562
+(iteration 413):  100.0 correct
+expl loss: 6.013610165389593e-10
+output loss: 9.269483618179475e-12
+Color loss:  690.1549682617188
+(iteration 414):  100.0 correct
+expl loss: 6.166382404693138e-10
+output loss: 9.152378507848447e-12
+Color loss:  690.75244140625
+(iteration 415):  100.0 correct
+expl loss: 6.055048684672215e-10
+output loss: 8.952673671847045e-12
+Color loss:  691.212890625
+(iteration 416):  100.0 correct
+expl loss: 6.056560808431755e-10
+output loss: 8.5315244452433e-12
+Color loss:  691.6009521484375
+(iteration 417):  100.0 correct
+expl loss: 6.000853147725138e-10
+output loss: 8.220779092182884e-12
+Color loss:  691.9027709960938
+(iteration 418):  100.0 correct
+expl loss: 6.03225802642271e-10
+output loss: 8.196327297427253e-12
+Color loss:  692.2197265625
+(iteration 419):  100.0 correct
+expl loss: 6.256976603502551e-10
+output loss: 8.205066834299224e-12
+Color loss:  692.73095703125
+(iteration 420):  100.0 correct
+expl loss: 6.287076415034676e-10
+output loss: 8.251835846573297e-12
+Color loss:  693.2340698242188
+(iteration 421):  100.0 correct
+expl loss: 6.117978901265531e-10
+output loss: 8.263802836472323e-12
+Color loss:  693.4299926757812
+(iteration 422):  100.0 correct
+expl loss: 6.096793625509633e-10
+output loss: 8.100961741697166e-12
+Color loss:  693.5831298828125
+(iteration 423):  100.0 correct
+expl loss: 6.076797953724622e-10
+output loss: 7.95491016808425e-12
+Color loss:  693.6874389648438
+(iteration 424):  100.0 correct
+expl loss: 6.034214239392099e-10
+output loss: 7.959099525278734e-12
+Color loss:  693.968994140625
+(iteration 425):  100.0 correct
+expl loss: 5.896096388902095e-10
+output loss: 7.844878392726518e-12
+Color loss:  694.1369018554688
+(iteration 426):  100.0 correct
+expl loss: 5.98638638660276e-10
+output loss: 7.767421254800677e-12
+Color loss:  694.386962890625
+(iteration 427):  100.0 correct
+expl loss: 5.933412094982771e-10
+output loss: 8.06070488135191e-12
+Color loss:  694.5361328125
+(iteration 428):  100.0 correct
+expl loss: 6.031591337496423e-10
+output loss: 8.355459553410771e-12
+Color loss:  694.888916015625
+(iteration 429):  100.0 correct
+expl loss: 5.923216361836126e-10
+output loss: 8.827886338602653e-12
+Color loss:  695.2796020507812
+(iteration 430):  100.0 correct
+expl loss: 5.975724359785772e-10
+output loss: 9.08036146274327e-12
+Color loss:  695.703369140625
+(iteration 431):  100.0 correct
+expl loss: 6.172573008278448e-10
+output loss: 9.558412221444268e-12
+Color loss:  696.1170654296875
+(iteration 432):  100.0 correct
+expl loss: 6.023055387771592e-10
+output loss: 1.0000782320329638e-11
+Color loss:  696.5430297851562
+(iteration 433):  100.0 correct
+expl loss: 6.033139543504262e-10
+output loss: 1.0179366898011022e-11
+Color loss:  697.1970825195312
+(iteration 434):  100.0 correct
+expl loss: 5.969118532789253e-10
+output loss: 1.0000170830304356e-11
+Color loss:  697.6723022460938
+(iteration 435):  100.0 correct
+expl loss: 5.890838927768982e-10
+output loss: 9.703769038305055e-12
+Color loss:  698.2194213867188
+(iteration 436):  100.0 correct
+expl loss: 5.847360373678612e-10
+output loss: 9.808696389834726e-12
+Color loss:  698.9322509765625
+(iteration 437):  100.0 correct
+expl loss: 6.258635276701341e-10
+output loss: 1.0217623622188476e-11
+Color loss:  699.6265869140625
+(iteration 438):  100.0 correct
+expl loss: 6.141858133190681e-10
+output loss: 1.1249529953405446e-11
+Color loss:  700.39208984375
+(iteration 439):  100.0 correct
+expl loss: 6.085332793226428e-10
+output loss: 1.2481671946007467e-11
+Color loss:  700.9341430664062
+(iteration 440):  100.0 correct
+expl loss: 5.931303781459007e-10
+output loss: 1.329071661754222e-11
+Color loss:  701.48046875
+(iteration 441):  100.0 correct
+expl loss: 5.892596410816964e-10
+output loss: 1.362982296471138e-11
+Color loss:  702.1761474609375
+(iteration 442):  100.0 correct
+expl loss: 6.040827837949792e-10
+output loss: 1.4115829165273208e-11
+Color loss:  702.6588134765625
+(iteration 443):  100.0 correct
+expl loss: 6.029862165135569e-10
+output loss: 1.4534564524160132e-11
+Color loss:  703.3946533203125
+(iteration 444):  100.0 correct
+expl loss: 5.856505835843961e-10
+output loss: 1.470377292145386e-11
+Color loss:  704.2054443359375
+(iteration 445):  100.0 correct
+expl loss: 5.95207272358067e-10
+output loss: 1.4635712780597387e-11
+Color loss:  705.0744018554688
+(iteration 446):  100.0 correct
+expl loss: 5.851066853246323e-10
+output loss: 1.4113259172443549e-11
+Color loss:  705.9223022460938
+(iteration 447):  100.0 correct
+expl loss: 6.073243019599772e-10
+output loss: 1.3454596811679487e-11
+Color loss:  706.8013916015625
+(iteration 448):  100.0 correct
+expl loss: 6.047127243391515e-10
+output loss: 1.2873087144871231e-11
+Color loss:  707.7362670898438
+(iteration 449):  100.0 correct
+expl loss: 6.005292929600614e-10
+output loss: 1.2635663348969928e-11
+Color loss:  708.6092529296875
+(iteration 450):  100.0 correct
+expl loss: 5.944156278303581e-10
+output loss: 1.2234596148685828e-11
+Color loss:  709.435791015625
+(iteration 451):  100.0 correct
+expl loss: 5.95810734083102e-10
+output loss: 1.2381101352487711e-11
+Color loss:  710.1702270507812
+(iteration 452):  100.0 correct
+expl loss: 6.00937022365855e-10
+output loss: 1.2955524673896601e-11
+Color loss:  710.814208984375
+(iteration 453):  100.0 correct
+expl loss: 6.174107891609992e-10
+output loss: 1.3657012153112102e-11
+Color loss:  711.4822387695312
+(iteration 454):  100.0 correct
+expl loss: 6.059786561429803e-10
+output loss: 1.4101408409017413e-11
+Color loss:  712.074462890625
+(iteration 455):  100.0 correct
+expl loss: 5.958639137659816e-10
+output loss: 1.3942573658110025e-11
+Color loss:  712.6550903320312
+(iteration 456):  100.0 correct
+expl loss: 5.951564796546904e-10
+output loss: 1.381997381116884e-11
+Color loss:  713.1719360351562
+(iteration 457):  100.0 correct
+expl loss: 5.867770158651808e-10
+output loss: 1.3634517126437373e-11
+Color loss:  713.7330932617188
+(iteration 458):  100.0 correct
+expl loss: 5.962088045485814e-10
+output loss: 1.3431720145840043e-11
+Color loss:  714.3966674804688
+(iteration 459):  100.0 correct
+expl loss: 5.949556403095357e-10
+output loss: 1.2489421823136393e-11
+Color loss:  715.269287109375
+(iteration 460):  100.0 correct
+expl loss: 5.927150437123885e-10
+output loss: 1.178740872270767e-11
+Color loss:  716.1859741210938
+(iteration 461):  100.0 correct
+expl loss: 5.900191446528424e-10
+output loss: 1.1308130647147419e-11
+Color loss:  717.0567016601562
+(iteration 462):  100.0 correct
+expl loss: 5.914270739815208e-10
+output loss: 1.1557165814635173e-11
+Color loss:  717.96875
+(iteration 463):  100.0 correct
+expl loss: 5.910697487010452e-10
+output loss: 1.2319541220495722e-11
+Color loss:  718.8499755859375
+(iteration 464):  100.0 correct
+expl loss: 5.914565504028246e-10
+output loss: 1.3284586104778118e-11
+Color loss:  719.6840209960938
+(iteration 465):  100.0 correct
+expl loss: 5.86370674238168e-10
+output loss: 1.5138217068777493e-11
+Color loss:  720.4176025390625
+(iteration 466):  100.0 correct
+expl loss: 5.922788925971645e-10
+output loss: 1.6922666393193175e-11
+Color loss:  720.997314453125
+(iteration 467):  100.0 correct
+expl loss: 5.839839167798289e-10
+output loss: 1.9154372532526054e-11
+Color loss:  721.681884765625
+(iteration 468):  100.0 correct
+expl loss: 6.14088335737506e-10
+output loss: 2.151839643971254e-11
+Color loss:  722.3194580078125
+(iteration 469):  100.0 correct
+expl loss: 6.053725298826862e-10
+output loss: 2.3739192903105e-11
+Color loss:  723.0855102539062
+(iteration 470):  100.0 correct
+expl loss: 5.918482925970636e-10
+output loss: 2.5804542530538654e-11
+Color loss:  723.626220703125
+(iteration 471):  100.0 correct
+expl loss: 5.832818117390559e-10
+output loss: 2.726810964526205e-11
+Color loss:  724.149658203125
+(iteration 472):  100.0 correct
+expl loss: 5.912428324705843e-10
+output loss: 2.982592992029076e-11
+Color loss:  725.1078491210938
+(iteration 473):  100.0 correct
+expl loss: 5.939458924686392e-10
+output loss: 3.1608011347161735e-11
+Color loss:  726.0685424804688
+(iteration 474):  100.0 correct
+expl loss: 6.021441123493787e-10
+output loss: 3.3096542867427914e-11
+Color loss:  727.0446166992188
+(iteration 475):  100.0 correct
+expl loss: 5.862866858663551e-10
+output loss: 3.4135739374052676e-11
+Color loss:  727.93310546875
+(iteration 476):  100.0 correct
+expl loss: 5.723725937656354e-10
+output loss: 3.616230925818087e-11
+Color loss:  728.750244140625
+(iteration 477):  100.0 correct
+expl loss: 5.847857198482131e-10
+output loss: 3.8597201823531435e-11
+Color loss:  729.4442138671875
+(iteration 478):  100.0 correct
+expl loss: 6.008537556390081e-10
+output loss: 4.089071442558989e-11
+Color loss:  729.8905639648438
+(iteration 479):  100.0 correct
+expl loss: 5.821907400616055e-10
+output loss: 4.255457791702e-11
+Color loss:  730.0791625976562
+(iteration 480):  100.0 correct
+expl loss: 6.035445476726409e-10
+output loss: 4.454771967976612e-11
+Color loss:  730.2369384765625
+(iteration 481):  100.0 correct
+expl loss: 5.837014760423642e-10
+output loss: 4.538383904795218e-11
+Color loss:  730.5335083007812
+(iteration 482):  100.0 correct
+expl loss: 6.194376123147549e-10
+output loss: 4.668604045021674e-11
+Color loss:  730.8064575195312
+(iteration 483):  100.0 correct
+expl loss: 6.061543489366272e-10
+output loss: 4.8790655543529127e-11
+Color loss:  731.269775390625
+(iteration 484):  100.0 correct
+expl loss: 6.054790002707477e-10
+output loss: 5.1228715713946826e-11
+Color loss:  731.709228515625
+(iteration 485):  100.0 correct
+expl loss: 5.763478583276083e-10
+output loss: 5.2465070482510257e-11
+Color loss:  732.2008056640625
+(iteration 486):  100.0 correct
+expl loss: 5.929693402961789e-10
+output loss: 5.5511806956731746e-11
+Color loss:  732.593017578125
+(iteration 487):  100.0 correct
+expl loss: 5.934375213456633e-10
+output loss: 5.936433983277922e-11
+Color loss:  733.2015991210938
+(iteration 488):  100.0 correct
+expl loss: 6.045380307462267e-10
+output loss: 6.312150802045835e-11
+Color loss:  733.8963012695312
+(iteration 489):  100.0 correct
+expl loss: 5.857715978940803e-10
+output loss: 6.789518947059037e-11
+Color loss:  734.563232421875
+(iteration 490):  100.0 correct
+expl loss: 6.073326841438131e-10
+output loss: 7.212787311861035e-11
+Color loss:  735.099365234375
+(iteration 491):  100.0 correct
+expl loss: 5.948938563982153e-10
+output loss: 7.490001674437252e-11
+Color loss:  735.7296752929688
+(iteration 492):  100.0 correct
+expl loss: 5.892423771136635e-10
+output loss: 7.785849742703022e-11
+Color loss:  736.292236328125
+(iteration 493):  100.0 correct
+expl loss: 5.862851315541207e-10
+output loss: 8.231817311132872e-11
+Color loss:  736.8907470703125
+(iteration 494):  100.0 correct
+expl loss: 5.983696871325606e-10
+output loss: 8.678963797636996e-11
+Color loss:  737.4589233398438
+(iteration 495):  100.0 correct
+expl loss: 6.087084725159286e-10
+output loss: 8.89673335002783e-11
+Color loss:  738.0489501953125
+(iteration 496):  100.0 correct
+expl loss: 5.875164799107324e-10
+output loss: 9.073626572320137e-11
+Color loss:  738.7020263671875
+(iteration 497):  100.0 correct
+expl loss: 6.125404072854224e-10
+output loss: 9.450758925444447e-11
+Color loss:  739.4537963867188
+(iteration 498):  100.0 correct
+expl loss: 6.073622160762682e-10
+output loss: 1.0300637426352566e-10
+Color loss:  740.3525390625
+(iteration 499):  100.0 correct
+expl loss: 5.776793488010412e-10
+output loss: 1.1040000164053154e-10
+Color loss:  741.1326904296875
+(iteration 500):  100.0 correct
+expl loss: 5.709573369649945e-10
+output loss: 1.1539810773619763e-10
+Color loss:  741.9089965820312
+(iteration 501):  100.0 correct
+expl loss: 5.883151743546478e-10
+output loss: 1.1776224440041005e-10
+Color loss:  742.278076171875
+(iteration 502):  100.0 correct
+expl loss: 5.7259957886302e-10
+output loss: 1.2070031085720245e-10
+Color loss:  742.7277221679688
+(iteration 503):  100.0 correct
+expl loss: 5.758726273619175e-10
+output loss: 1.2296792750721153e-10
+Color loss:  743.1409912109375
+(iteration 504):  100.0 correct
+expl loss: 5.824051241276607e-10
+output loss: 1.241953900832371e-10
+Color loss:  743.4696044921875
+(iteration 505):  100.0 correct
+expl loss: 6.09979344812217e-10
+output loss: 1.2555523287716142e-10
+Color loss:  743.7542724609375
+(iteration 506):  100.0 correct
+expl loss: 5.722562423926547e-10
+output loss: 1.2582715425146773e-10
+Color loss:  744.0335083007812
+(iteration 507):  100.0 correct
+expl loss: 5.973329608721656e-10
+output loss: 1.2552897610262903e-10
+Color loss:  744.2679443359375
+(iteration 508):  100.0 correct
+expl loss: 6.03445682312298e-10
+output loss: 1.2404915983310616e-10
+Color loss:  744.5693969726562
+(iteration 509):  100.0 correct
+expl loss: 5.729116625552422e-10
+output loss: 1.2337815491481052e-10
+Color loss:  744.8409423828125
+(iteration 510):  100.0 correct
+expl loss: 5.803243996460594e-10
+output loss: 1.2403689186868405e-10
+Color loss:  745.1602172851562
+(iteration 511):  100.0 correct
+expl loss: 5.880196329854925e-10
+output loss: 1.255118786680498e-10
+Color loss:  745.4461669921875
+(iteration 512):  100.0 correct
+expl loss: 5.752608389641978e-10
+output loss: 1.2896225753955548e-10
+Color loss:  745.6778564453125
+(iteration 513):  100.0 correct
+expl loss: 5.776405465063306e-10
+output loss: 1.3256434838737619e-10
+Color loss:  745.920654296875
+(iteration 514):  100.0 correct
+expl loss: 5.944802983215425e-10
+output loss: 1.3608045246193967e-10
+Color loss:  746.1107788085938
+(iteration 515):  100.0 correct
+expl loss: 5.9179988687319e-10
+output loss: 1.4084325372643036e-10
+Color loss:  746.2636108398438
+(iteration 516):  100.0 correct
+expl loss: 5.993447405039376e-10
+output loss: 1.4557512140189743e-10
+Color loss:  746.43408203125
+(iteration 517):  100.0 correct
+expl loss: 5.835985028568302e-10
+output loss: 1.5054749114007393e-10
+Color loss:  746.6255493164062
+(iteration 518):  100.0 correct
+expl loss: 5.653104651059948e-10
+output loss: 1.5430252908732456e-10
+Color loss:  746.7891235351562
+(iteration 519):  100.0 correct
+expl loss: 6.25375029539299e-10
+output loss: 1.5742974979193747e-10
+Color loss:  746.8914184570312
+(iteration 520):  100.0 correct
+expl loss: 6.015062892217315e-10
+output loss: 1.5871015612844985e-10
+Color loss:  747.024658203125
+(iteration 521):  100.0 correct
+expl loss: 5.804218772276215e-10
+output loss: 1.5938272923676777e-10
+Color loss:  747.0940551757812
+(iteration 522):  100.0 correct
+expl loss: 5.657850299378708e-10
+output loss: 1.5901956140762508e-10
+Color loss:  747.1534423828125
+(iteration 523):  100.0 correct
+expl loss: 5.909839839723929e-10
+output loss: 1.5984286116932367e-10
+Color loss:  747.1694946289062
+(iteration 524):  100.0 correct
+expl loss: 5.924609136620518e-10
+output loss: 1.5926443497349396e-10
+Color loss:  747.1741943359375
+(iteration 525):  100.0 correct
+expl loss: 5.92089377526861e-10
+output loss: 1.5828799382333614e-10
+Color loss:  747.2139892578125
+(iteration 526):  100.0 correct
+expl loss: 6.047713996260029e-10
+output loss: 1.5640876094291656e-10
+Color loss:  747.3057250976562
+(iteration 527):  100.0 correct
+expl loss: 5.940357650224826e-10
+output loss: 1.5032962374927905e-10
+Color loss:  747.392333984375
+(iteration 528):  100.0 correct
+expl loss: 5.867039631901605e-10
+output loss: 1.444764863300918e-10
+Color loss:  747.4833374023438
+(iteration 529):  100.0 correct
+expl loss: 6.095405846728852e-10
+output loss: 1.3977070889570342e-10
+Color loss:  747.634033203125
+(iteration 530):  100.0 correct
+expl loss: 5.840819494729033e-10
+output loss: 1.3741717486137617e-10
+Color loss:  747.8087158203125
+(iteration 531):  100.0 correct
+expl loss: 5.754594578633032e-10
+output loss: 1.33451610873081e-10
+Color loss:  747.94482421875
+(iteration 532):  100.0 correct
+expl loss: 5.970130501076198e-10
+output loss: 1.2970628737729584e-10
+Color loss:  748.073486328125
+(iteration 533):  100.0 correct
+expl loss: 5.779358103197296e-10
+output loss: 1.2734199805741753e-10
+Color loss:  748.2234497070312
+(iteration 534):  100.0 correct
+expl loss: 5.81208137173661e-10
+output loss: 1.2439191343638356e-10
+Color loss:  748.3223266601562
+(iteration 535):  100.0 correct
+expl loss: 5.625790389096608e-10
+output loss: 1.2107824465257266e-10
+Color loss:  748.4347534179688
+(iteration 536):  100.0 correct
+expl loss: 5.914713718802034e-10
+output loss: 1.1863311721871383e-10
+Color loss:  748.5430908203125
+(iteration 537):  100.0 correct
+expl loss: 5.660708013444093e-10
+output loss: 1.169539326495439e-10
+Color loss:  748.6920776367188
+(iteration 538):  100.0 correct
+expl loss: 5.800389057952771e-10
+output loss: 1.1428748225572605e-10
+Color loss:  748.7946166992188
+(iteration 539):  100.0 correct
+expl loss: 5.913501355259143e-10
+output loss: 1.1211291617296837e-10
+Color loss:  748.9230346679688
+(iteration 540):  100.0 correct
+expl loss: 5.965895555348766e-10
+output loss: 1.0877932582475935e-10
+Color loss:  749.0087890625
+(iteration 541):  100.0 correct
+expl loss: 5.761519594749132e-10
+output loss: 1.0631882180200947e-10
+Color loss:  749.0509643554688
+(iteration 542):  100.0 correct
+expl loss: 5.651430989850326e-10
+output loss: 1.0382671111752728e-10
+Color loss:  749.0704345703125
+(iteration 543):  100.0 correct
+expl loss: 5.96310723022242e-10
+output loss: 1.0095078245564437e-10
+Color loss:  749.0943603515625
+(iteration 544):  100.0 correct
+expl loss: 5.889416732074437e-10
+output loss: 9.739512668582861e-11
+Color loss:  749.147705078125
+(iteration 545):  100.0 correct
+expl loss: 5.999910013265719e-10
+output loss: 9.574623732744314e-11
+Color loss:  749.1768188476562
+(iteration 546):  100.0 correct
+expl loss: 5.861623408875971e-10
+output loss: 9.501850001258916e-11
+Color loss:  749.1929931640625
+(iteration 547):  100.0 correct
+expl loss: 5.866653274289035e-10
+output loss: 9.672442013997085e-11
+Color loss:  749.2400512695312
+(iteration 548):  100.0 correct
+expl loss: 5.795446900158652e-10
+output loss: 9.758446134489063e-11
+Color loss:  749.308837890625
+(iteration 549):  100.0 correct
+expl loss: 5.845404715820735e-10
+output loss: 9.856427479748575e-11
+Color loss:  749.3460083007812
+(iteration 550):  100.0 correct
+expl loss: 5.67876301538206e-10
+output loss: 9.77220526721112e-11
+Color loss:  749.3805541992188
+(iteration 551):  100.0 correct
+expl loss: 5.750245279934063e-10
+output loss: 9.537799022796278e-11
+Color loss:  749.408935546875
+(iteration 552):  100.0 correct
+expl loss: 5.926318324966928e-10
+output loss: 9.323793126458924e-11
+Color loss:  749.4419555664062
+(iteration 553):  100.0 correct
+expl loss: 5.79522096977314e-10
+output loss: 9.123875960304062e-11
+Color loss:  749.4679565429688
+(iteration 554):  100.0 correct
+expl loss: 5.801908953273482e-10
+output loss: 9.160401603924839e-11
+Color loss:  749.5205688476562
+(iteration 555):  100.0 correct
+expl loss: 5.833724059378653e-10
+output loss: 9.202193174129292e-11
+Color loss:  749.5387573242188
+(iteration 556):  100.0 correct
+expl loss: 6.065352664563761e-10
+output loss: 9.203098699783752e-11
+Color loss:  749.5355834960938
+(iteration 557):  100.0 correct
+expl loss: 5.893308618887261e-10
+output loss: 9.126509964429985e-11
+Color loss:  749.5554809570312
+(iteration 558):  100.0 correct
+expl loss: 5.938439184838273e-10
+output loss: 9.088692992653691e-11
+Color loss:  749.632080078125
+(iteration 559):  100.0 correct
+expl loss: 5.85386017437628e-10
+output loss: 9.014018004238622e-11
+Color loss:  749.65673828125
+(iteration 560):  100.0 correct
+expl loss: 5.847249906487662e-10
+output loss: 8.833979381339674e-11
+Color loss:  749.7091674804688
+(iteration 561):  100.0 correct
+expl loss: 5.725167007142318e-10
+output loss: 8.766707498830684e-11
+Color loss:  749.7486572265625
+(iteration 562):  100.0 correct
+expl loss: 5.677296965878043e-10
+output loss: 8.837074821910207e-11
+Color loss:  749.8496704101562
+(iteration 563):  100.0 correct
+expl loss: 6.322741219477734e-10
+output loss: 8.830539077742117e-11
+Color loss:  750.0169677734375
+(iteration 564):  100.0 correct
+expl loss: 5.907775380009639e-10
+output loss: 8.693801928361111e-11
+Color loss:  750.1555786132812
+(iteration 565):  100.0 correct
+expl loss: 6.002282004757831e-10
+output loss: 8.597583756042582e-11
+Color loss:  750.2796020507812
+(iteration 566):  100.0 correct
+expl loss: 5.869464358987386e-10
+output loss: 8.504191101321723e-11
+Color loss:  750.3793334960938
+(iteration 567):  100.0 correct
+expl loss: 5.875641084784888e-10
+output loss: 8.44552761058992e-11
+Color loss:  750.4949340820312
+(iteration 568):  100.0 correct
+expl loss: 5.90818616252875e-10
+output loss: 8.434582893235287e-11
+Color loss:  750.5516967773438
+(iteration 569):  100.0 correct
+expl loss: 5.943084913084817e-10
+output loss: 8.386321498354832e-11
+Color loss:  750.5474853515625
+(iteration 570):  100.0 correct
+expl loss: 5.948152526080719e-10
+output loss: 8.36845315266288e-11
+Color loss:  750.5773315429688
+(iteration 571):  100.0 correct
+expl loss: 5.747620712703849e-10
+output loss: 8.377665922099098e-11
+Color loss:  750.6526489257812
+(iteration 572):  100.0 correct
+expl loss: 5.715279915996518e-10
+output loss: 8.255533062717646e-11
+Color loss:  750.7220458984375
+(iteration 573):  100.0 correct
+expl loss: 5.870743335911754e-10
+output loss: 8.249334548793286e-11
+Color loss:  750.774169921875
+(iteration 574):  100.0 correct
+expl loss: 5.70713087899577e-10
+output loss: 8.203809853668531e-11
+Color loss:  750.8084106445312
+(iteration 575):  100.0 correct
+expl loss: 5.68472324768976e-10
+output loss: 8.329847922539102e-11
+Color loss:  750.8677368164062
+(iteration 576):  100.0 correct
+expl loss: 5.899431498868069e-10
+output loss: 8.564865483506878e-11
+Color loss:  750.9408569335938
+(iteration 577):  100.0 correct
+expl loss: 5.788293733210992e-10
+output loss: 8.656578232013601e-11
+Color loss:  751.015380859375
+(iteration 578):  100.0 correct
+expl loss: 5.969352789847449e-10
+output loss: 8.720392463690274e-11
+Color loss:  751.1478271484375
+(iteration 579):  100.0 correct
+expl loss: 5.815868897585119e-10
+output loss: 8.709295090669755e-11
+Color loss:  751.2449951171875
+(iteration 580):  100.0 correct
+expl loss: 5.797262114803914e-10
+output loss: 8.661085737493579e-11
+Color loss:  751.3472290039062
+(iteration 581):  100.0 correct
+expl loss: 5.885885112633105e-10
+output loss: 8.65494342860984e-11
+Color loss:  751.470703125
+(iteration 582):  100.0 correct
+expl loss: 5.684083759227576e-10
+output loss: 8.651768190759412e-11
+Color loss:  751.5851440429688
+(iteration 583):  100.0 correct
+expl loss: 5.946220738017871e-10
+output loss: 8.705407228415396e-11
+Color loss:  751.6551513671875
+(iteration 584):  100.0 correct
+expl loss: 5.975924199930205e-10
+output loss: 8.686937974511366e-11
+Color loss:  751.6749877929688
+(iteration 585):  100.0 correct
+expl loss: 5.839665417894935e-10
+output loss: 8.896870046237737e-11
+Color loss:  751.7534790039062
+(iteration 586):  100.0 correct
+expl loss: 5.874691844098834e-10
+output loss: 8.983643690063658e-11
+Color loss:  751.8140258789062
+(iteration 587):  100.0 correct
+expl loss: 5.857292428856908e-10
+output loss: 9.098102132787389e-11
+Color loss:  751.9008178710938
+(iteration 588):  100.0 correct
+expl loss: 5.783847289997368e-10
+output loss: 9.212625801113816e-11
+Color loss:  751.991455078125
+(iteration 589):  100.0 correct
+expl loss: 5.739347330724343e-10
+output loss: 9.339082979176183e-11
+Color loss:  752.0610961914062
+(iteration 590):  100.0 correct
+expl loss: 5.976937278440175e-10
+output loss: 9.398861550158344e-11
+Color loss:  752.1458740234375
+(iteration 591):  100.0 correct
+expl loss: 5.880206321862147e-10
+output loss: 9.508276110903324e-11
+Color loss:  752.2825317382812
+(iteration 592):  100.0 correct
+expl loss: 5.772423095073975e-10
+output loss: 9.722804505951643e-11
+Color loss:  752.4490966796875
+(iteration 593):  100.0 correct
+expl loss: 5.636570654665718e-10
+output loss: 9.806132295064884e-11
+Color loss:  752.5712890625
+(iteration 594):  100.0 correct
+expl loss: 6.001014130063709e-10
+output loss: 9.768946762633846e-11
+Color loss:  752.7267456054688
+(iteration 595):  100.0 correct
+expl loss: 5.853083573370554e-10
+output loss: 9.713338466887933e-11
+Color loss:  752.8323974609375
+(iteration 596):  100.0 correct
+expl loss: 5.799098978798156e-10
+output loss: 9.58354923197291e-11
+Color loss:  752.9302978515625
+(iteration 597):  100.0 correct
+expl loss: 6.026659171709525e-10
+output loss: 9.34573807231942e-11
+Color loss:  752.9889526367188
+(iteration 598):  100.0 correct
+expl loss: 5.862220153751707e-10
+output loss: 9.25878748669895e-11
+Color loss:  753.090576171875
+(iteration 599):  100.0 correct
+expl loss: 5.815271042486359e-10
+output loss: 9.044448523454207e-11
+Color loss:  753.1322021484375
+(iteration 600):  100.0 correct
+expl loss: 5.727344154493608e-10
+output loss: 8.843985266349108e-11
+Color loss:  753.15625
+(iteration 601):  100.0 correct
+expl loss: 5.784134282649234e-10
+output loss: 8.758562625166277e-11
+Color loss:  753.194580078125
+(iteration 602):  100.0 correct
+expl loss: 5.74615910409193e-10
+output loss: 8.690162478508512e-11
+Color loss:  753.2268676757812
+(iteration 603):  100.0 correct
+expl loss: 5.643841505253988e-10
+output loss: 8.529153772141029e-11
+Color loss:  753.2406005859375
+(iteration 604):  100.0 correct
+expl loss: 5.640790612382318e-10
+output loss: 8.419531738468322e-11
+Color loss:  753.2363891601562
+(iteration 605):  100.0 correct
+expl loss: 5.760715793279303e-10
+output loss: 8.31389609934341e-11
+Color loss:  753.2313842773438
+(iteration 606):  100.0 correct
+expl loss: 5.638999267532085e-10
+output loss: 8.256781369730959e-11
+Color loss:  753.2459716796875
+(iteration 607):  100.0 correct
+expl loss: 5.842433759006838e-10
+output loss: 8.121495836954651e-11
+Color loss:  753.2859497070312
+(iteration 608):  100.0 correct
+expl loss: 5.952038861778419e-10
+output loss: 7.979431004834225e-11
+Color loss:  753.289794921875
+(iteration 609):  100.0 correct
+expl loss: 5.90104964892646e-10
+output loss: 7.86283330111992e-11
+Color loss:  753.31591796875
+(iteration 610):  100.0 correct
+expl loss: 5.791428447921021e-10
+output loss: 7.798592327468157e-11
+Color loss:  753.3228149414062
+(iteration 611):  100.0 correct
+expl loss: 5.859708274158493e-10
+output loss: 7.737167156962599e-11
+Color loss:  753.3451538085938
+(iteration 612):  100.0 correct
+expl loss: 5.852729967337211e-10
+output loss: 7.538602381229609e-11
+Color loss:  753.37255859375
+(iteration 613):  100.0 correct
+expl loss: 5.747333720051984e-10
+output loss: 7.375887400851155e-11
+Color loss:  753.3888549804688
+(iteration 614):  100.0 correct
+expl loss: 5.978348927015986e-10
+output loss: 7.27544899326027e-11
+Color loss:  753.5178833007812
+(iteration 615):  100.0 correct
+expl loss: 5.699151706117789e-10
+output loss: 7.21807058567947e-11
+Color loss:  753.6181640625
+(iteration 616):  100.0 correct
+expl loss: 5.691154769671414e-10
+output loss: 7.121501305329403e-11
+Color loss:  753.7557373046875
+(iteration 617):  100.0 correct
+expl loss: 5.764506649796886e-10
+output loss: 7.045036776176516e-11
+Color loss:  753.932861328125
+(iteration 618):  100.0 correct
+expl loss: 5.78975756226896e-10
+output loss: 6.974989336105963e-11
+Color loss:  754.1148071289062
+(iteration 619):  100.0 correct
+expl loss: 5.852905382575102e-10
+output loss: 7.097923637733317e-11
+Color loss:  754.2893676757812
+(iteration 620):  100.0 correct
+expl loss: 5.980623218881931e-10
+output loss: 7.296391962841042e-11
+Color loss:  754.4050903320312
+(iteration 621):  100.0 correct
+expl loss: 5.812315073683294e-10
+output loss: 7.466730705951719e-11
+Color loss:  754.4957885742188
+(iteration 622):  100.0 correct
+expl loss: 5.679444137207668e-10
+output loss: 7.71450889280878e-11
+Color loss:  754.6453247070312
+(iteration 623):  100.0 correct
+expl loss: 5.84509163292779e-10
+output loss: 7.93816679056647e-11
+Color loss:  754.8009033203125
+(iteration 624):  100.0 correct
+expl loss: 5.711531803065384e-10
+output loss: 8.139407203788807e-11
+Color loss:  754.9160766601562
+(iteration 625):  100.0 correct
+expl loss: 5.673285730090072e-10
+output loss: 8.222017511272384e-11
+Color loss:  754.9911499023438
+(iteration 626):  100.0 correct
+expl loss: 5.654446355585208e-10
+output loss: 8.377255139579987e-11
+Color loss:  755.0678100585938
+(iteration 627):  100.0 correct
+expl loss: 5.785645851297261e-10
+output loss: 8.495979614275839e-11
+Color loss:  755.1834716796875
+(iteration 628):  100.0 correct
+expl loss: 5.863213248247234e-10
+output loss: 8.595495842866896e-11
+Color loss:  755.3190307617188
+(iteration 629):  100.0 correct
+expl loss: 6.013307074503871e-10
+output loss: 8.656458883038454e-11
+Color loss:  755.4304809570312
+(iteration 630):  100.0 correct
+expl loss: 5.723334028928662e-10
+output loss: 8.800435380429406e-11
+Color loss:  755.5447998046875
+(iteration 631):  100.0 correct
+expl loss: 5.768140409756484e-10
+output loss: 8.794484585017415e-11
+Color loss:  755.644287109375
+(iteration 632):  100.0 correct
+expl loss: 5.631575761277929e-10
+output loss: 8.917112881423606e-11
+Color loss:  755.7190551757812
+(iteration 633):  100.0 correct
+expl loss: 5.543529524310031e-10
+output loss: 9.015710400461785e-11
+Color loss:  755.8373413085938
+(iteration 634):  100.0 correct
+expl loss: 5.707846417735141e-10
+output loss: 9.079054869021164e-11
+Color loss:  755.9735717773438
+(iteration 635):  100.0 correct
+expl loss: 5.712209039110405e-10
+output loss: 8.982635468779421e-11
+Color loss:  756.1604614257812
+(iteration 636):  100.0 correct
+expl loss: 5.794746349430113e-10
+output loss: 8.867653833455336e-11
+Color loss:  756.3309326171875
+(iteration 637):  100.0 correct
+expl loss: 5.634219757411074e-10
+output loss: 8.614338409262956e-11
+Color loss:  756.4940795898438
+(iteration 638):  100.0 correct
+expl loss: 5.770589561748807e-10
+output loss: 8.403507056886639e-11
+Color loss:  756.6607666015625
+(iteration 639):  100.0 correct
+expl loss: 5.787172963067633e-10
+output loss: 8.062997491897761e-11
+Color loss:  756.8375244140625
+(iteration 640):  100.0 correct
+expl loss: 5.805857461460562e-10
+output loss: 7.787959166449809e-11
+Color loss:  756.9948120117188
+(iteration 641):  100.0 correct
+expl loss: 5.730378949131421e-10
+output loss: 7.623329745243268e-11
+Color loss:  757.089111328125
+(iteration 642):  100.0 correct
+expl loss: 5.734914765298527e-10
+output loss: 7.449210692733743e-11
+Color loss:  757.207275390625
+(iteration 643):  100.0 correct
+expl loss: 5.65510471783881e-10
+output loss: 7.3682226986449e-11
+Color loss:  757.34228515625
+(iteration 644):  100.0 correct
+expl loss: 5.93519067226822e-10
+output loss: 7.12511993850029e-11
+Color loss:  757.5005493164062
+(iteration 645):  100.0 correct
+expl loss: 5.734432928505839e-10
+output loss: 6.96322652316006e-11
+Color loss:  757.6626586914062
+(iteration 646):  100.0 correct
+expl loss: 5.796053637041609e-10
+output loss: 6.888035974927931e-11
+Color loss:  757.8291625976562
+(iteration 647):  100.0 correct
+expl loss: 5.826006344022971e-10
+output loss: 6.806975816342486e-11
+Color loss:  757.911865234375
+(iteration 648):  100.0 correct
+expl loss: 5.823511117775126e-10
+output loss: 6.758139187157397e-11
+Color loss:  757.9746704101562
+(iteration 649):  100.0 correct
+expl loss: 5.767654132071698e-10
+output loss: 6.636140942317681e-11
+Color loss:  758.0174560546875
+(iteration 650):  100.0 correct
+expl loss: 5.867785146662641e-10
+output loss: 6.638623678556499e-11
+Color loss:  758.0458984375
+(iteration 651):  100.0 correct
+expl loss: 5.888928789055115e-10
+output loss: 6.636154126216098e-11
+Color loss:  758.070556640625
+(iteration 652):  100.0 correct
+expl loss: 5.88671944523611e-10
+output loss: 6.732310542378883e-11
+Color loss:  758.1138305664062
+(iteration 653):  100.0 correct
+expl loss: 5.891375165489876e-10
+output loss: 6.814488556772247e-11
+Color loss:  758.1255493164062
+(iteration 654):  100.0 correct
+expl loss: 5.740145581079048e-10
+output loss: 7.001509094717306e-11
+Color loss:  758.1687622070312
+(iteration 655):  100.0 correct
+expl loss: 6.015339337750447e-10
+output loss: 6.96901703012287e-11
+Color loss:  758.2061157226562
+(iteration 656):  100.0 correct
+expl loss: 5.910020806076943e-10
+output loss: 6.901099830480817e-11
+Color loss:  758.2249145507812
+(iteration 657):  100.0 correct
+expl loss: 5.782132550535835e-10
+output loss: 6.769734772760216e-11
+Color loss:  758.3333129882812
+(iteration 658):  100.0 correct
+expl loss: 5.727746610340034e-10
+output loss: 6.595021750932517e-11
+Color loss:  758.3916015625
+(iteration 659):  100.0 correct
+expl loss: 5.959491233831216e-10
+output loss: 6.568064148115837e-11
+Color loss:  758.4976196289062
+(iteration 660):  100.0 correct
+expl loss: 5.874074560097142e-10
+output loss: 6.506419014673526e-11
+Color loss:  758.5999145507812
+(iteration 661):  100.0 correct
+expl loss: 5.56808044116508e-10
+output loss: 6.372982003233219e-11
+Color loss:  758.665283203125
+(iteration 662):  100.0 correct
+expl loss: 5.758477028550146e-10
+output loss: 6.227032084415995e-11
+Color loss:  758.7208862304688
+(iteration 663):  100.0 correct
+expl loss: 5.647254330831686e-10
+output loss: 6.112307188166355e-11
+Color loss:  758.7682495117188
+(iteration 664):  100.0 correct
+expl loss: 5.656144441701372e-10
+output loss: 6.028853111184063e-11
+Color loss:  758.76611328125
+(iteration 665):  100.0 correct
+expl loss: 5.757876397893824e-10
+output loss: 5.888806803300284e-11
+Color loss:  758.7322387695312
+(iteration 666):  100.0 correct
+expl loss: 5.875613329209273e-10
+output loss: 5.694724553029218e-11
+Color loss:  758.7562255859375
+(iteration 667):  100.0 correct
+expl loss: 5.681821679814902e-10
+output loss: 5.462313240611749e-11
+Color loss:  758.7403564453125
+(iteration 668):  100.0 correct
+expl loss: 5.681156656223152e-10
+output loss: 5.3296266705471496e-11
+Color loss:  758.6846313476562
+(iteration 669):  100.0 correct
+expl loss: 5.854933760041092e-10
+output loss: 5.1746606999358846e-11
+Color loss:  758.6844482421875
+(iteration 670):  100.0 correct
+expl loss: 5.796914614997206e-10
+output loss: 5.0359636599717206e-11
+Color loss:  758.7684326171875
+(iteration 671):  100.0 correct
+expl loss: 5.71168445873127e-10
+output loss: 4.970776568136159e-11
+Color loss:  758.912109375
+(iteration 672):  100.0 correct
+expl loss: 5.846167994150164e-10
+output loss: 4.919610205322833e-11
+Color loss:  759.0873413085938
+(iteration 673):  100.0 correct
+expl loss: 5.789418389134937e-10
+output loss: 4.832811234534162e-11
+Color loss:  759.25146484375
+(iteration 674):  100.0 correct
+expl loss: 5.80750614265213e-10
+output loss: 4.750651261264949e-11
+Color loss:  759.4456787109375
+(iteration 675):  100.0 correct
+expl loss: 5.794991153607043e-10
+output loss: 4.637532718954063e-11
+Color loss:  759.658203125
+(iteration 676):  100.0 correct
+expl loss: 5.783524770208714e-10
+output loss: 4.520057939050304e-11
+Color loss:  759.9091796875
+(iteration 677):  100.0 correct
+expl loss: 5.847202722009115e-10
+output loss: 4.35967754952582e-11
+Color loss:  760.2020263671875
+(iteration 678):  100.0 correct
+expl loss: 5.718320261749454e-10
+output loss: 4.254753493970753e-11
+Color loss:  760.491455078125
+(iteration 679):  100.0 correct
+expl loss: 5.663757240981226e-10
+output loss: 4.19346085633876e-11
+Color loss:  760.7808227539062
+(iteration 680):  100.0 correct
+expl loss: 5.686429105367097e-10
+output loss: 4.148167920270396e-11
+Color loss:  761.0634765625
+(iteration 681):  100.0 correct
+expl loss: 5.756602416973067e-10
+output loss: 3.999461872794541e-11
+Color loss:  761.2901000976562
+(iteration 682):  100.0 correct
+expl loss: 5.663104984954259e-10
+output loss: 3.8989533823752254e-11
+Color loss:  761.5529174804688
+(iteration 683):  100.0 correct
+expl loss: 5.789183576965229e-10
+output loss: 3.846821125530475e-11
+Color loss:  761.7948608398438
+(iteration 684):  100.0 correct
+expl loss: 5.706352612655508e-10
+output loss: 3.785015009749593e-11
+Color loss:  762.0499267578125
+(iteration 685):  100.0 correct
+expl loss: 5.680124703921763e-10
+output loss: 3.718833921362297e-11
+Color loss:  762.2788696289062
+(iteration 686):  100.0 correct
+expl loss: 5.827434090832639e-10
+output loss: 3.677794874201723e-11
+Color loss:  762.5325927734375
+(iteration 687):  100.0 correct
+expl loss: 5.839014827202504e-10
+output loss: 3.5972069073464397e-11
+Color loss:  762.74072265625
+(iteration 688):  100.0 correct
+expl loss: 5.661798252454275e-10
+output loss: 3.5144030047229435e-11
+Color loss:  762.92822265625
+(iteration 689):  100.0 correct
+expl loss: 5.767301636261379e-10
+output loss: 3.4297845813435757e-11
+Color loss:  763.12451171875
+(iteration 690):  100.0 correct
+expl loss: 5.582362350153858e-10
+output loss: 3.3327909876312845e-11
+Color loss:  763.2850952148438
+(iteration 691):  100.0 correct
+expl loss: 5.735432684339514e-10
+output loss: 3.283164365375235e-11
+Color loss:  763.4255981445312
+(iteration 692):  100.0 correct
+expl loss: 5.841103711823337e-10
+output loss: 3.2122388082811426e-11
+Color loss:  763.5849609375
+(iteration 693):  100.0 correct
+expl loss: 5.963388671759162e-10
+output loss: 3.170736589952483e-11
+Color loss:  763.7505493164062
+(iteration 694):  100.0 correct
+expl loss: 5.743143738357048e-10
+output loss: 3.105473170283979e-11
+Color loss:  763.8928833007812
+(iteration 695):  100.0 correct
+expl loss: 5.776146227987056e-10
+output loss: 3.017704836016932e-11
+Color loss:  764.0457153320312
+(iteration 696):  100.0 correct
+expl loss: 5.813219350336851e-10
+output loss: 2.923139161281618e-11
+Color loss:  764.1695556640625
+(iteration 697):  100.0 correct
+expl loss: 5.717754603118408e-10
+output loss: 2.8549426711599324e-11
+Color loss:  764.3062744140625
+(iteration 698):  100.0 correct
+expl loss: 5.623367882456876e-10
+output loss: 2.8278447292140463e-11
+Color loss:  764.4434204101562
+(iteration 699):  100.0 correct
+expl loss: 5.705628747243452e-10
+output loss: 2.818634388390695e-11
+Color loss:  764.5661010742188
+(iteration 700):  100.0 correct
+expl loss: 5.683550852175756e-10
+output loss: 2.8192089288059385e-11
+Color loss:  764.6450805664062
+(iteration 701):  100.0 correct
+expl loss: 5.582018736127736e-10
+output loss: 2.7977667058087796e-11
+Color loss:  764.7025756835938
+(iteration 702):  100.0 correct
+expl loss: 5.746405573603397e-10
+output loss: 2.7479499578597633e-11
+Color loss:  764.8079223632812
+(iteration 703):  100.0 correct
+expl loss: 5.778834077929673e-10
+output loss: 2.6926858312514845e-11
+Color loss:  764.8870239257812
+(iteration 704):  100.0 correct
+expl loss: 5.722446405620474e-10
+output loss: 2.6362700217275048e-11
+Color loss:  764.942138671875
+(iteration 705):  100.0 correct
+expl loss: 5.714707596027324e-10
+output loss: 2.570521746847465e-11
+Color loss:  765.0051879882812
+(iteration 706):  100.0 correct
+expl loss: 5.816351289489319e-10
+output loss: 2.5283598131808915e-11
+Color loss:  765.068359375
+(iteration 707):  100.0 correct
+expl loss: 5.697458616005235e-10
+output loss: 2.5288103208676027e-11
+Color loss:  765.0880126953125
+(iteration 708):  100.0 correct
+expl loss: 5.683235548836763e-10
+output loss: 2.5531278480261932e-11
+Color loss:  765.09033203125
+(iteration 709):  100.0 correct
+expl loss: 5.660283908248687e-10
+output loss: 2.5741584211425028e-11
+Color loss:  765.1151733398438
+(iteration 710):  100.0 correct
+expl loss: 5.917770162788827e-10
+output loss: 2.5818064700033894e-11
+Color loss:  765.1731567382812
+(iteration 711):  100.0 correct
+expl loss: 5.584450124551665e-10
+output loss: 2.591323683409641e-11
+Color loss:  765.2937622070312
+(iteration 712):  100.0 correct
+expl loss: 5.645015010991017e-10
+output loss: 2.5981687287734978e-11
+Color loss:  765.393798828125
+(iteration 713):  100.0 correct
+expl loss: 5.830964600050947e-10
+output loss: 2.5836251540956034e-11
+Color loss:  765.5514526367188
+(iteration 714):  100.0 correct
+expl loss: 5.697984861718908e-10
+output loss: 2.5409424564415417e-11
+Color loss:  765.7061157226562
+(iteration 715):  100.0 correct
+expl loss: 5.617672438340549e-10
+output loss: 2.5247508944614694e-11
+Color loss:  765.8617553710938
+(iteration 716):  100.0 correct
+expl loss: 5.717812889827201e-10
+output loss: 2.519382445720364e-11
+Color loss:  765.961669921875
+(iteration 717):  100.0 correct
+expl loss: 5.68134095324524e-10
+output loss: 2.54153902784493e-11
+Color loss:  766.0146484375
+(iteration 718):  100.0 correct
+expl loss: 5.705951822143618e-10
+output loss: 2.5374344986284214e-11
+Color loss:  766.0516357421875
+(iteration 719):  100.0 correct
+expl loss: 5.629729460387978e-10
+output loss: 2.5337077921849804e-11
+Color loss:  766.1477661132812
+(iteration 720):  100.0 correct
+expl loss: 5.806975456046359e-10
+output loss: 2.5286706756277866e-11
+Color loss:  766.234130859375
+(iteration 721):  100.0 correct
+expl loss: 5.847666240121896e-10
+output loss: 2.5628461158833105e-11
+Color loss:  766.3427124023438
+(iteration 722):  100.0 correct
+expl loss: 5.646636491718482e-10
+output loss: 2.592110553978344e-11
+Color loss:  766.4825439453125
+(iteration 723):  100.0 correct
+expl loss: 5.886802711962957e-10
+output loss: 2.6314190409992833e-11
+Color loss:  766.565673828125
+(iteration 724):  100.0 correct
+expl loss: 5.723290175119189e-10
+output loss: 2.6712148118446244e-11
+Color loss:  766.681396484375
+(iteration 725):  100.0 correct
+expl loss: 5.747126108346379e-10
+output loss: 2.684275891839949e-11
+Color loss:  766.7593994140625
+(iteration 726):  100.0 correct
+expl loss: 5.581914930274934e-10
+output loss: 2.7104840941150066e-11
+Color loss:  766.8432006835938
+(iteration 727):  100.0 correct
+expl loss: 5.567617478163811e-10
+output loss: 2.775175228508786e-11
+Color loss:  766.9664916992188
+(iteration 728):  100.0 correct
+expl loss: 5.760469878879348e-10
+output loss: 2.819567496148423e-11
+Color loss:  767.0317993164062
+(iteration 729):  100.0 correct
+expl loss: 5.945381409411254e-10
+output loss: 2.8775938229474995e-11
+Color loss:  767.0528564453125
+(iteration 730):  100.0 correct
+expl loss: 5.723277407554406e-10
+output loss: 2.91740624713821e-11
+Color loss:  767.0513916015625
+(iteration 731):  100.0 correct
+expl loss: 5.693919780114243e-10
+output loss: 2.9298577453040764e-11
+Color loss:  767.1150512695312
+(iteration 732):  100.0 correct
+expl loss: 5.673096992175886e-10
+output loss: 2.9966924774971204e-11
+Color loss:  767.1729125976562
+(iteration 733):  100.0 correct
+expl loss: 5.637486033549521e-10
+output loss: 2.981006413937948e-11
+Color loss:  767.263427734375
+(iteration 734):  100.0 correct
+expl loss: 5.730648733326404e-10
+output loss: 2.9534794748764526e-11
+Color loss:  767.3446044921875
+(iteration 735):  100.0 correct
+expl loss: 5.798643232246548e-10
+output loss: 2.913017396743989e-11
+Color loss:  767.4505615234375
+(iteration 736):  100.0 correct
+expl loss: 5.734700492254774e-10
+output loss: 2.8636024107520086e-11
+Color loss:  767.6068115234375
+(iteration 737):  100.0 correct
+expl loss: 5.603564279255124e-10
+output loss: 2.8198358578701566e-11
+Color loss:  767.7740478515625
+(iteration 738):  100.0 correct
+expl loss: 5.710270034597897e-10
+output loss: 2.7433911045648962e-11
+Color loss:  767.9269409179688
+(iteration 739):  100.0 correct
+expl loss: 5.584337992026178e-10
+output loss: 2.6369148184435254e-11
+Color loss:  768.116943359375
+(iteration 740):  100.0 correct
+expl loss: 5.556158866326655e-10
+output loss: 2.5634596875767635e-11
+Color loss:  768.2435302734375
+(iteration 741):  100.0 correct
+expl loss: 5.760337207227906e-10
+output loss: 2.5129566830206507e-11
+Color loss:  768.3671875
+(iteration 742):  100.0 correct
+expl loss: 5.681835002491198e-10
+output loss: 2.4970329623452692e-11
+Color loss:  768.5009765625
+(iteration 743):  100.0 correct
+expl loss: 5.604555708416115e-10
+output loss: 2.513040990581583e-11
+Color loss:  768.5985107421875
+(iteration 744):  100.0 correct
+expl loss: 5.559869231674952e-10
+output loss: 2.494194607793876e-11
+Color loss:  768.7174682617188
+(iteration 745):  100.0 correct
+expl loss: 5.82932813131265e-10
+output loss: 2.488828934610332e-11
+Color loss:  768.84619140625
+(iteration 746):  100.0 correct
+expl loss: 5.738529096355194e-10
+output loss: 2.4803728515543355e-11
+Color loss:  768.9398803710938
+(iteration 747):  100.0 correct
+expl loss: 5.749696274648386e-10
+output loss: 2.4537956735959376e-11
+Color loss:  769.04443359375
+(iteration 748):  100.0 correct
+expl loss: 5.708024053419081e-10
+output loss: 2.4021592007206216e-11
+Color loss:  769.1981811523438
+(iteration 749):  100.0 correct
+expl loss: 5.453749118977669e-10
+output loss: 2.363892588619354e-11
+Color loss:  769.420654296875
+(iteration 750):  100.0 correct
+expl loss: 5.666599411924267e-10
+output loss: 2.3005592222902216e-11
+Color loss:  769.626220703125
+(iteration 751):  100.0 correct
+expl loss: 5.740254382935461e-10
+output loss: 2.2413985598102037e-11
+Color loss:  769.781494140625
+(iteration 752):  100.0 correct
+expl loss: 5.656280444021888e-10
+output loss: 2.137200139085138e-11
+Color loss:  769.9168090820312
+(iteration 753):  100.0 correct
+expl loss: 5.682064263545783e-10
+output loss: 2.04938496728424e-11
+Color loss:  770.0238647460938
+(iteration 754):  100.0 correct
+expl loss: 5.727348595385706e-10
+output loss: 1.957255017781545e-11
+Color loss:  770.0364990234375
+(iteration 755):  100.0 correct
+expl loss: 5.523465573809005e-10
+output loss: 1.85783471939871e-11
+Color loss:  770.0401611328125
+(iteration 756):  100.0 correct
+expl loss: 5.794026924910156e-10
+output loss: 1.7598865073575887e-11
+Color loss:  770.0401611328125
+(iteration 757):  100.0 correct
+expl loss: 5.703676975166161e-10
+output loss: 1.7076140848559795e-11
+Color loss:  770.0843505859375
+(iteration 758):  100.0 correct
+expl loss: 5.795782187512089e-10
+output loss: 1.6699891469684758e-11
+Color loss:  770.0617065429688
+(iteration 759):  100.0 correct
+expl loss: 5.759417387452004e-10
+output loss: 1.6458587964729432e-11
+Color loss:  770.0732421875
+(iteration 760):  100.0 correct
+expl loss: 5.526900603847196e-10
+output loss: 1.6334203087331467e-11
+Color loss:  770.100341796875
+(iteration 761):  100.0 correct
+expl loss: 5.733072905300673e-10
+output loss: 1.611846940641204e-11
+Color loss:  770.1030883789062
+(iteration 762):  100.0 correct
+expl loss: 5.924953860869664e-10
+output loss: 1.617185378666175e-11
+Color loss:  770.0742797851562
+(iteration 763):  100.0 correct
+expl loss: 5.775779299277417e-10
+output loss: 1.6268333902225152e-11
+Color loss:  770.1069946289062
+(iteration 764):  100.0 correct
+expl loss: 5.557639903841505e-10
+output loss: 1.6617381082273397e-11
+Color loss:  770.17333984375
+(iteration 765):  100.0 correct
+expl loss: 5.590728435755921e-10
+output loss: 1.6972262137371352e-11
+Color loss:  770.2430419921875
+(iteration 766):  100.0 correct
+expl loss: 5.777454625821576e-10
+output loss: 1.7368391447281084e-11
+Color loss:  770.2798461914062
+(iteration 767):  100.0 correct
+expl loss: 5.713161610465534e-10
+output loss: 1.76211770869239e-11
+Color loss:  770.3746948242188
+(iteration 768):  100.0 correct
+expl loss: 5.679660075585957e-10
+output loss: 1.7860579334949556e-11
+Color loss:  770.429931640625
+(iteration 769):  100.0 correct
+expl loss: 5.767051280969326e-10
+output loss: 1.7914395661344784e-11
+Color loss:  770.5012817382812
+(iteration 770):  100.0 correct
+expl loss: 5.784658307916857e-10
+output loss: 1.7933491497368337e-11
+Color loss:  770.5177612304688
+(iteration 771):  100.0 correct
+expl loss: 5.623228549467285e-10
+output loss: 1.799682625147625e-11
+Color loss:  770.5010375976562
+(iteration 772):  100.0 correct
+expl loss: 5.839994599021736e-10
+output loss: 1.7881637143224438e-11
+Color loss:  770.508544921875
+(iteration 773):  100.0 correct
+expl loss: 5.765492527842753e-10
+output loss: 1.758497514270374e-11
+Color loss:  770.482666015625
+(iteration 774):  100.0 correct
+expl loss: 5.650032108839298e-10
+output loss: 1.7341265576287235e-11
+Color loss:  770.4931030273438
+(iteration 775):  100.0 correct
+expl loss: 5.715863893307471e-10
+output loss: 1.700408043536772e-11
+Color loss:  770.5654296875
+(iteration 776):  100.0 correct
+expl loss: 5.768046040799391e-10
+output loss: 1.662331730600819e-11
+Color loss:  770.6646728515625
+(iteration 777):  100.0 correct
+expl loss: 5.717332163257538e-10
+output loss: 1.633433492631564e-11
+Color loss:  770.70947265625
+(iteration 778):  100.0 correct
+expl loss: 5.702007754848637e-10
+output loss: 1.598697216276257e-11
+Color loss:  770.77197265625
+(iteration 779):  100.0 correct
+expl loss: 5.746357834013338e-10
+output loss: 1.568240329263837e-11
+Color loss:  770.8389282226562
+(iteration 780):  100.0 correct
+expl loss: 5.715984907617155e-10
+output loss: 1.5513666740130105e-11
+Color loss:  770.9739379882812
+(iteration 781):  100.0 correct
+expl loss: 5.781976009089362e-10
+output loss: 1.5391674046405512e-11
+Color loss:  771.1124877929688
+(iteration 782):  100.0 correct
+expl loss: 5.48412648626595e-10
+output loss: 1.540831871815751e-11
+Color loss:  771.2193603515625
+(iteration 783):  100.0 correct
+expl loss: 5.68124991495722e-10
+output loss: 1.546926996220943e-11
+Color loss:  771.3242797851562
+(iteration 784):  100.0 correct
+expl loss: 5.599538610567834e-10
+output loss: 1.5016477644680393e-11
+Color loss:  771.434326171875
+(iteration 785):  100.0 correct
+expl loss: 5.619229526132585e-10
+output loss: 1.4713209817163175e-11
+Color loss:  771.5916137695312
+(iteration 786):  100.0 correct
+expl loss: 5.677203152032462e-10
+output loss: 1.4489899731462419e-11
+Color loss:  771.7540893554688
+(iteration 787):  100.0 correct
+expl loss: 5.608534747736371e-10
+output loss: 1.4111049134735154e-11
+Color loss:  771.9309692382812
+(iteration 788):  100.0 correct
+expl loss: 5.503302258347276e-10
+output loss: 1.3875322765755094e-11
+Color loss:  772.1287841796875
+(iteration 789):  100.0 correct
+expl loss: 5.818128756551744e-10
+output loss: 1.3646048700743929e-11
+Color loss:  772.3040771484375
+(iteration 790):  100.0 correct
+expl loss: 5.527315272146893e-10
+output loss: 1.3545784285917684e-11
+Color loss:  772.4584350585938
+(iteration 791):  100.0 correct
+expl loss: 5.879252085172482e-10
+output loss: 1.3471774043538609e-11
+Color loss:  772.6156616210938
+(iteration 792):  100.0 correct
+expl loss: 5.661556778946419e-10
+output loss: 1.3439849927410208e-11
+Color loss:  772.820556640625
+(iteration 793):  100.0 correct
+expl loss: 5.639966826898046e-10
+output loss: 1.3613260692324491e-11
+Color loss:  773.0702514648438
+(iteration 794):  100.0 correct
+expl loss: 5.642308287256981e-10
+output loss: 1.3646908256226276e-11
+Color loss:  773.3306884765625
+(iteration 795):  100.0 correct
+expl loss: 5.708148398397839e-10
+output loss: 1.3631746773046238e-11
+Color loss:  773.5823364257812
+(iteration 796):  100.0 correct
+expl loss: 5.618793208483908e-10
+output loss: 1.3738973500543317e-11
+Color loss:  773.8694458007812
+(iteration 797):  100.0 correct
+expl loss: 5.726841223463452e-10
+output loss: 1.3969346512876513e-11
+Color loss:  774.2017822265625
+(iteration 798):  100.0 correct
+expl loss: 5.686985327102434e-10
+output loss: 1.4516975295475465e-11
+Color loss:  774.5037841796875
+(iteration 799):  100.0 correct
+expl loss: 5.823507787106053e-10
+output loss: 1.514678660274882e-11
+Color loss:  774.860107421875
+(iteration 800):  100.0 correct
+expl loss: 5.772073374821218e-10
+output loss: 1.5708483125376205e-11
+Color loss:  775.235107421875
+(iteration 801):  100.0 correct
+expl loss: 5.690261595248103e-10
+output loss: 1.6355309467863677e-11
+Color loss:  775.5409545898438
+(iteration 802):  100.0 correct
+expl loss: 5.610590325666465e-10
+output loss: 1.6824253795677535e-11
+Color loss:  775.8228149414062
+(iteration 803):  100.0 correct
+expl loss: 5.900342991971286e-10
+output loss: 1.705742144753053e-11
+Color loss:  776.10009765625
+(iteration 804):  100.0 correct
+expl loss: 5.489530496838313e-10
+output loss: 1.7574067201486798e-11
+Color loss:  776.36083984375
+(iteration 805):  100.0 correct
+expl loss: 5.724395957251716e-10
+output loss: 1.83170683482059e-11
+Color loss:  776.6087036132812
+(iteration 806):  100.0 correct
+expl loss: 5.716775386410688e-10
+output loss: 1.9178143448317364e-11
+Color loss:  776.8628540039062
+(iteration 807):  100.0 correct
+expl loss: 5.704434702380468e-10
+output loss: 2.0020188631897362e-11
+Color loss:  777.0718383789062
+(iteration 808):  100.0 correct
+expl loss: 5.718864826143033e-10
+output loss: 2.0665786790163843e-11
+Color loss:  777.283203125
+(iteration 809):  100.0 correct
+expl loss: 5.627686650022667e-10
+output loss: 2.1414583648016183e-11
+Color loss:  777.4951782226562
+(iteration 810):  100.0 correct
+expl loss: 5.546156311986294e-10
+output loss: 2.2077303526990555e-11
+Color loss:  777.6677856445312
+(iteration 811):  100.0 correct
+expl loss: 5.682450621158353e-10
+output loss: 2.3096873372208115e-11
+Color loss:  777.81005859375
+(iteration 812):  100.0 correct
+expl loss: 5.660377722094267e-10
+output loss: 2.4136938975294342e-11
+Color loss:  777.9008178710938
+(iteration 813):  100.0 correct
+expl loss: 5.656543011767212e-10
+output loss: 2.5373429052288898e-11
+Color loss:  778.0081176757812
+(iteration 814):  100.0 correct
+expl loss: 5.523287938125065e-10
+output loss: 2.6654527543468198e-11
+Color loss:  778.2568359375
+(iteration 815):  100.0 correct
+expl loss: 5.888587395475042e-10
+output loss: 2.746130926822854e-11
+Color loss:  778.302734375
+(iteration 816):  100.0 correct
+expl loss: 5.611970887997586e-10
+output loss: 2.788995423497198e-11
+Color loss:  778.4042358398438
+(iteration 817):  100.0 correct
+expl loss: 5.640204969736828e-10
+output loss: 2.8528370638047917e-11
+Color loss:  778.5007934570312
+(iteration 818):  100.0 correct
+expl loss: 5.624942733817306e-10
+output loss: 2.919471261964013e-11
+Color loss:  778.5411376953125
+(iteration 819):  100.0 correct
+expl loss: 5.542601377861445e-10
+output loss: 2.996642170516317e-11
+Color loss:  778.5592651367188
+(iteration 820):  100.0 correct
+expl loss: 5.606840547400793e-10
+output loss: 3.079067556477355e-11
+Color loss:  778.57763671875
+(iteration 821):  100.0 correct
+expl loss: 5.628422172776482e-10
+output loss: 3.1582705201094186e-11
+Color loss:  778.6207275390625
+(iteration 822):  100.0 correct
+expl loss: 5.638368660854098e-10
+output loss: 3.261982350899473e-11
+Color loss:  778.6619262695312
+(iteration 823):  100.0 correct
+expl loss: 5.840380401522793e-10
+output loss: 3.3673092092456613e-11
+Color loss:  778.6907958984375
+(iteration 824):  100.0 correct
+expl loss: 5.801684133110996e-10
+output loss: 3.42891340321394e-11
+Color loss:  778.6834106445312
+(iteration 825):  100.0 correct
+expl loss: 5.68130265055089e-10
+output loss: 3.438378401443565e-11
+Color loss:  778.7137451171875
+(iteration 826):  100.0 correct
+expl loss: 5.652517898191434e-10
+output loss: 3.4359428496832933e-11
+Color loss:  778.7672729492188
+(iteration 827):  100.0 correct
+expl loss: 5.854617346479074e-10
+output loss: 3.400898312966305e-11
+Color loss:  778.8822631835938
+(iteration 828):  100.0 correct
+expl loss: 5.741358499733451e-10
+output loss: 3.408353807521358e-11
+Color loss:  779.0119018554688
+(iteration 829):  100.0 correct
+expl loss: 5.735665276063173e-10
+output loss: 3.348750790554966e-11
+Color loss:  779.1085205078125
+(iteration 830):  100.0 correct
+expl loss: 5.724659080108552e-10
+output loss: 3.299835057979372e-11
+Color loss:  779.2189331054688
+(iteration 831):  100.0 correct
+expl loss: 5.807939684743246e-10
+output loss: 3.304826204364453e-11
+Color loss:  779.3814697265625
+(iteration 832):  100.0 correct
+expl loss: 5.658700730215571e-10
+output loss: 3.2866796090269546e-11
+Color loss:  779.5020751953125
+(iteration 833):  100.0 correct
+expl loss: 5.657406210168858e-10
+output loss: 3.2588688692047896e-11
+Color loss:  779.6043701171875
+(iteration 834):  100.0 correct
+expl loss: 5.804081104621162e-10
+output loss: 3.239997159454333e-11
+Color loss:  779.74169921875
+(iteration 835):  100.0 correct
+expl loss: 5.545663928074873e-10
+output loss: 3.2720638698524596e-11
+Color loss:  779.9046020507812
+(iteration 836):  100.0 correct
+expl loss: 5.622379228853447e-10
+output loss: 3.2332459626305265e-11
+Color loss:  779.9953002929688
+(iteration 837):  100.0 correct
+expl loss: 5.663678415146478e-10
+output loss: 3.231514708601502e-11
+Color loss:  780.1209106445312
+(iteration 838):  100.0 correct
+expl loss: 5.801591984599952e-10
+output loss: 3.246066609952081e-11
+Color loss:  780.3491821289062
+(iteration 839):  100.0 correct
+expl loss: 5.642473155376138e-10
+output loss: 3.2462685317646844e-11
+Color loss:  780.5147094726562
+(iteration 840):  100.0 correct
+expl loss: 5.549140591476487e-10
+output loss: 3.203885073910229e-11
+Color loss:  780.6842651367188
+(iteration 841):  100.0 correct
+expl loss: 5.614697595746065e-10
+output loss: 3.148604987845971e-11
+Color loss:  780.8506469726562
+(iteration 842):  100.0 correct
+expl loss: 5.619186227434625e-10
+output loss: 3.0871791234510226e-11
+Color loss:  781.0387573242188
+(iteration 843):  100.0 correct
+expl loss: 5.515334300376651e-10
+output loss: 2.9977454546470383e-11
+Color loss:  781.1697998046875
+(iteration 844):  100.0 correct
+expl loss: 5.646701994876935e-10
+output loss: 2.916206165437529e-11
+Color loss:  781.2530517578125
+(iteration 845):  100.0 correct
+expl loss: 5.687695869838194e-10
+output loss: 2.822084753384413e-11
+Color loss:  781.3440551757812
+(iteration 846):  100.0 correct
+expl loss: 5.670264813240067e-10
+output loss: 2.73987707521961e-11
+Color loss:  781.4098510742188
+(iteration 847):  100.0 correct
+expl loss: 5.618482901148525e-10
+output loss: 2.691457647030493e-11
+Color loss:  781.5088500976562
+(iteration 848):  100.0 correct
+expl loss: 5.721093598864968e-10
+output loss: 2.6316508000556738e-11
+Color loss:  781.619873046875
+(iteration 849):  100.0 correct
+expl loss: 5.713948758589993e-10
+output loss: 2.5729111549632755e-11
+Color loss:  781.6630249023438
+(iteration 850):  100.0 correct
+expl loss: 5.720971474332259e-10
+output loss: 2.5246209636731187e-11
+Color loss:  781.7469482421875
+(iteration 851):  100.0 correct
+expl loss: 5.736462416194854e-10
+output loss: 2.4754042565744427e-11
+Color loss:  781.8790893554688
+(iteration 852):  100.0 correct
+expl loss: 5.68945668355525e-10
+output loss: 2.4835095785435968e-11
+Color loss:  782.06494140625
+(iteration 853):  100.0 correct
+expl loss: 5.604090524968797e-10
+output loss: 2.5180040344463528e-11
+Color loss:  782.2294921875
+(iteration 854):  100.0 correct
+expl loss: 5.647036727118859e-10
+output loss: 2.57284801102875e-11
+Color loss:  782.3915405273438
+(iteration 855):  100.0 correct
+expl loss: 5.863214913581771e-10
+output loss: 2.5761795474643634e-11
+Color loss:  782.5433959960938
+(iteration 856):  100.0 correct
+expl loss: 5.507030387263967e-10
+output loss: 2.5564749969730904e-11
+Color loss:  782.6620483398438
+(iteration 857):  100.0 correct
+expl loss: 5.539405600885061e-10
+output loss: 2.5493933353271103e-11
+Color loss:  782.7442626953125
+(iteration 858):  100.0 correct
+expl loss: 5.672844971549296e-10
+output loss: 2.578913818607198e-11
+Color loss:  782.8121337890625
+(iteration 859):  100.0 correct
+expl loss: 5.804189351366063e-10
+output loss: 2.64445756958942e-11
+Color loss:  782.8878784179688
+(iteration 860):  100.0 correct
+expl loss: 5.740941055876192e-10
+output loss: 2.6796080979107906e-11
+Color loss:  782.9406127929688
+(iteration 861):  100.0 correct
+expl loss: 5.687538218168697e-10
+output loss: 2.7217655212963265e-11
+Color loss:  783.0098266601562
+(iteration 862):  100.0 correct
+expl loss: 5.631201616118631e-10
+output loss: 2.76838933721546e-11
+Color loss:  783.1051025390625
+(iteration 863):  100.0 correct
+expl loss: 5.617462051077382e-10
+output loss: 2.7890210974046425e-11
+Color loss:  783.1800537109375
+(iteration 864):  100.0 correct
+expl loss: 5.798370672494002e-10
+output loss: 2.8549714675696336e-11
+Color loss:  783.2623291015625
+(iteration 865):  100.0 correct
+expl loss: 5.539255720776737e-10
+output loss: 2.943916985187478e-11
+Color loss:  783.3921508789062
+(iteration 866):  100.0 correct
+expl loss: 5.562139082648798e-10
+output loss: 3.008593721376407e-11
+Color loss:  783.5469360351562
+(iteration 867):  100.0 correct
+expl loss: 5.694117399812626e-10
+output loss: 3.008187449138333e-11
+Color loss:  783.5703735351562
+(iteration 868):  100.0 correct
+expl loss: 5.581226036888154e-10
+output loss: 2.99966683436903e-11
+Color loss:  783.7045288085938
+(iteration 869):  100.0 correct
+expl loss: 5.608369879617214e-10
+output loss: 3.013433252929687e-11
+Color loss:  783.8311157226562
+(iteration 870):  100.0 correct
+expl loss: 5.696302318725088e-10
+output loss: 3.051068772630394e-11
+Color loss:  783.9570922851562
+(iteration 871):  100.0 correct
+expl loss: 5.544566472615031e-10
+output loss: 3.061933345760437e-11
+Color loss:  784.042724609375
+(iteration 872):  100.0 correct
+expl loss: 5.706639050195861e-10
+output loss: 3.0621082058868154e-11
+Color loss:  784.1337890625
+(iteration 873):  100.0 correct
+expl loss: 5.666379032653879e-10
+output loss: 3.040564328093964e-11
+Color loss:  784.2036743164062
+(iteration 874):  100.0 correct
+expl loss: 5.592936114240388e-10
+output loss: 2.98164097578546e-11
+Color loss:  784.27197265625
+(iteration 875):  100.0 correct
+expl loss: 5.651092371827815e-10
+output loss: 2.915114677426445e-11
+Color loss:  784.3546752929688
+(iteration 876):  100.0 correct
+expl loss: 5.745450781802219e-10
+output loss: 2.8800599058409482e-11
+Color loss:  784.4364013671875
+(iteration 877):  100.0 correct
+expl loss: 5.893200927253872e-10
+output loss: 2.872452276037052e-11
+Color loss:  784.516357421875
+(iteration 878):  100.0 correct
+expl loss: 5.55389179091037e-10
+output loss: 2.872349580407274e-11
+Color loss:  784.57470703125
+(iteration 879):  100.0 correct
+expl loss: 5.60723578679756e-10
+output loss: 2.885358271753624e-11
+Color loss:  784.6300659179688
+(iteration 880):  100.0 correct
+expl loss: 5.604751662779961e-10
+output loss: 2.922145858619274e-11
+Color loss:  784.8180541992188
+(iteration 881):  100.0 correct
+expl loss: 5.367006283840681e-10
+output loss: 2.9036398285775533e-11
+Color loss:  784.8301391601562
+(iteration 882):  100.0 correct
+expl loss: 5.78674275164559e-10
+output loss: 2.900054675569752e-11
+Color loss:  784.8577270507812
+(iteration 883):  100.0 correct
+expl loss: 5.749868359217203e-10
+output loss: 2.917902031107644e-11
+Color loss:  784.9432373046875
+(iteration 884):  100.0 correct
+expl loss: 5.691180859912492e-10
+output loss: 2.959720662998322e-11
+Color loss:  785.024658203125
+(iteration 885):  100.0 correct
+expl loss: 5.757400667327772e-10
+output loss: 2.991451183986804e-11
+Color loss:  785.0559692382812
+(iteration 886):  100.0 correct
+expl loss: 5.929668422943735e-10
+output loss: 3.04171063336689e-11
+Color loss:  785.176025390625
+(iteration 887):  100.0 correct
+expl loss: 5.556449744759107e-10
+output loss: 3.050132715842757e-11
+Color loss:  785.3321533203125
+(iteration 888):  100.0 correct
+expl loss: 5.653523205140232e-10
+output loss: 3.069525536525397e-11
+Color loss:  785.4542236328125
+(iteration 889):  100.0 correct
+expl loss: 5.567845628995371e-10
+output loss: 3.092703176887923e-11
+Color loss:  785.5809936523438
+(iteration 890):  100.0 correct
+expl loss: 5.581550222011344e-10
+output loss: 3.097817141695103e-11
+Color loss:  785.7230224609375
+(iteration 891):  100.0 correct
+expl loss: 5.612151299239088e-10
+output loss: 3.0836323078320405e-11
+Color loss:  785.8596801757812
+(iteration 892):  100.0 correct
+expl loss: 5.690835025440322e-10
+output loss: 3.030223988398362e-11
+Color loss:  785.9488525390625
+(iteration 893):  100.0 correct
+expl loss: 5.58718293852678e-10
+output loss: 3.0088362357183485e-11
+Color loss:  786.0192260742188
+(iteration 894):  100.0 correct
+expl loss: 5.683250536847595e-10
+output loss: 3.028407732919014e-11
+Color loss:  786.1368408203125
+(iteration 895):  100.0 correct
+expl loss: 5.725295793013174e-10
+output loss: 3.054957675718839e-11
+Color loss:  786.2645263671875
+(iteration 896):  100.0 correct
+expl loss: 5.574766759330885e-10
+output loss: 3.071264423337716e-11
+Color loss:  786.3941650390625
+(iteration 897):  100.0 correct
+expl loss: 5.608125630551797e-10
+output loss: 3.079610871870031e-11
+Color loss:  786.4658813476562
+(iteration 898):  100.0 correct
+expl loss: 5.613100539925142e-10
+output loss: 3.089628899943797e-11
+Color loss:  786.5507202148438
+(iteration 899):  100.0 correct
+expl loss: 5.494117383264552e-10
+output loss: 3.1520390464390147e-11
+Color loss:  786.7346801757812
+(iteration 900):  100.0 correct
+expl loss: 5.542303282979333e-10
+output loss: 3.221547334453234e-11
+Color loss:  786.90673828125
+(iteration 901):  100.0 correct
+expl loss: 5.765843358318534e-10
+output loss: 3.307815479858256e-11
+Color loss:  787.0570068359375
+(iteration 902):  100.0 correct
+expl loss: 5.662165736275426e-10
+output loss: 3.3707973912111555e-11
+Color loss:  787.1873779296875
+(iteration 903):  100.0 correct
+expl loss: 5.733596375456784e-10
+output loss: 3.4879488186589924e-11
+Color loss:  787.341552734375
+(iteration 904):  100.0 correct
+expl loss: 5.754633436438894e-10
+output loss: 3.5826227401392075e-11
+Color loss:  787.525146484375
+(iteration 905):  100.0 correct
+expl loss: 5.733899466342507e-10
+output loss: 3.6473529058111964e-11
+Color loss:  787.70947265625
+(iteration 906):  100.0 correct
+expl loss: 5.676891179362542e-10
+output loss: 3.783143937008404e-11
+Color loss:  787.91845703125
+(iteration 907):  100.0 correct
+expl loss: 5.854570162000527e-10
+output loss: 3.949234342326413e-11
+Color loss:  788.1475219726562
+(iteration 908):  100.0 correct
+expl loss: 5.51824586025873e-10
+output loss: 4.16438966643895e-11
+Color loss:  788.3955078125
+(iteration 909):  100.0 correct
+expl loss: 5.606887176767827e-10
+output loss: 4.363446062805032e-11
+Color loss:  788.6155395507812
+(iteration 910):  100.0 correct
+expl loss: 5.685079074169153e-10
+output loss: 4.4937737558869983e-11
+Color loss:  788.8316650390625
+(iteration 911):  100.0 correct
+expl loss: 5.716503936881168e-10
+output loss: 4.704257816623425e-11
+Color loss:  789.1732177734375
+(iteration 912):  100.0 correct
+expl loss: 5.605064190561393e-10
+output loss: 4.8086378628964255e-11
+Color loss:  789.546142578125
+(iteration 913):  100.0 correct
+expl loss: 5.692666893430953e-10
+output loss: 5.003527106528516e-11
+Color loss:  789.956787109375
+(iteration 914):  100.0 correct
+expl loss: 5.592414309418814e-10
+output loss: 5.2255418742097604e-11
+Color loss:  790.3408203125
+(iteration 915):  100.0 correct
+expl loss: 5.681026760129271e-10
+output loss: 5.43421037335623e-11
+Color loss:  790.752197265625
+(iteration 916):  100.0 correct
+expl loss: 5.546422765512204e-10
+output loss: 5.6841056167433734e-11
+Color loss:  791.1233520507812
+(iteration 917):  100.0 correct
+expl loss: 5.623371213125949e-10
+output loss: 5.803710637075632e-11
+Color loss:  791.496826171875
+(iteration 918):  100.0 correct
+expl loss: 5.682085912894763e-10
+output loss: 5.934905344950892e-11
+Color loss:  791.8383178710938
+(iteration 919):  100.0 correct
+expl loss: 5.584035456251968e-10
+output loss: 6.028020443915594e-11
+Color loss:  792.0914306640625
+(iteration 920):  100.0 correct
+expl loss: 5.603881247928655e-10
+output loss: 6.086359888302084e-11
+Color loss:  792.3219604492188
+(iteration 921):  100.0 correct
+expl loss: 5.659877566621674e-10
+output loss: 6.113520106820758e-11
+Color loss:  792.5281372070312
+(iteration 922):  100.0 correct
+expl loss: 5.613576825602706e-10
+output loss: 6.067302910084393e-11
+Color loss:  792.7460327148438
+(iteration 923):  100.0 correct
+expl loss: 5.889713716733525e-10
+output loss: 6.004564900852216e-11
+Color loss:  792.9515991210938
+(iteration 924):  100.0 correct
+expl loss: 5.68099067788097e-10
+output loss: 5.83621553862379e-11
+Color loss:  793.1920776367188
+(iteration 925):  100.0 correct
+expl loss: 5.647463052760315e-10
+output loss: 5.7958530336188474e-11
+Color loss:  793.3786010742188
+(iteration 926):  100.0 correct
+expl loss: 5.669231195604141e-10
+output loss: 5.7864536079366147e-11
+Color loss:  793.49755859375
+(iteration 927):  100.0 correct
+expl loss: 5.519545376309054e-10
+output loss: 5.833726557380459e-11
+Color loss:  793.6134033203125
+(iteration 928):  100.0 correct
+expl loss: 5.63492696947776e-10
+output loss: 5.79791735455526e-11
+Color loss:  793.7283325195312
+(iteration 929):  100.0 correct
+expl loss: 5.570233163609828e-10
+output loss: 5.7699674899103215e-11
+Color loss:  793.79150390625
+(iteration 930):  100.0 correct
+expl loss: 5.586805462698408e-10
+output loss: 5.786120194084532e-11
+Color loss:  793.8715209960938
+(iteration 931):  100.0 correct
+expl loss: 5.495988664172557e-10
+output loss: 5.8156347793048013e-11
+Color loss:  793.9893188476562
+(iteration 932):  100.0 correct
+expl loss: 5.439033667897775e-10
+output loss: 5.890004456388098e-11
+Color loss:  794.0711669921875
+(iteration 933):  100.0 correct
+expl loss: 5.59559398816134e-10
+output loss: 5.879863956836928e-11
+Color loss:  794.1358642578125
+(iteration 934):  100.0 correct
+expl loss: 5.602548980299105e-10
+output loss: 5.86406131986017e-11
+Color loss:  794.1644287109375
+(iteration 935):  100.0 correct
+expl loss: 5.503358324610019e-10
+output loss: 5.909221029165579e-11
+Color loss:  794.2085571289062
+(iteration 936):  100.0 correct
+expl loss: 5.538244307601303e-10
+output loss: 6.138951152978578e-11
+Color loss:  794.3021850585938
+(iteration 937):  100.0 correct
+expl loss: 5.463685615048064e-10
+output loss: 6.394292734190898e-11
+Color loss:  794.4398803710938
+(iteration 938):  100.0 correct
+expl loss: 5.59690682688796e-10
+output loss: 6.712207872849874e-11
+Color loss:  794.570556640625
+(iteration 939):  100.0 correct
+expl loss: 5.619142373625152e-10
+output loss: 7.029830190186104e-11
+Color loss:  794.7218627929688
+(iteration 940):  100.0 correct
+expl loss: 5.547218795420861e-10
+output loss: 7.289010367506066e-11
+Color loss:  794.8590087890625
+(iteration 941):  100.0 correct
+expl loss: 5.663978730474639e-10
+output loss: 7.49003289945982e-11
+Color loss:  794.9551391601562
+(iteration 942):  100.0 correct
+expl loss: 5.692796789524834e-10
+output loss: 7.554529224407247e-11
+Color loss:  795.0573120117188
+(iteration 943):  100.0 correct
+expl loss: 5.546552106494573e-10
+output loss: 7.686700581599482e-11
+Color loss:  795.1522827148438
+(iteration 944):  100.0 correct
+expl loss: 5.529038893392624e-10
+output loss: 7.984324312815261e-11
+Color loss:  795.2842407226562
+(iteration 945):  100.0 correct
+expl loss: 5.680117487472103e-10
+output loss: 8.099559217766839e-11
+Color loss:  795.3709716796875
+(iteration 946):  100.0 correct
+expl loss: 5.61124702258553e-10
+output loss: 8.217065916582555e-11
+Color loss:  795.4717407226562
+(iteration 947):  100.0 correct
+expl loss: 5.461988084043412e-10
+output loss: 8.239025434120251e-11
+Color loss:  795.6078491210938
+(iteration 948):  100.0 correct
+expl loss: 5.559464555382476e-10
+output loss: 8.263918716000518e-11
+Color loss:  795.7564697265625
+(iteration 949):  100.0 correct
+expl loss: 5.510925604745864e-10
+output loss: 8.307417254105331e-11
+Color loss:  795.9288940429688
+(iteration 950):  100.0 correct
+expl loss: 5.540710112938996e-10
+output loss: 8.4048240589496e-11
+Color loss:  796.118896484375
+(iteration 951):  100.0 correct
+expl loss: 5.669592018087144e-10
+output loss: 8.556011454885493e-11
+Color loss:  796.271484375
+(iteration 952):  100.0 correct
+expl loss: 5.543070447089349e-10
+output loss: 8.740075330138097e-11
+Color loss:  796.4083251953125
+(iteration 953):  100.0 correct
+expl loss: 5.547755033141755e-10
+output loss: 8.753075347867068e-11
+Color loss:  796.527099609375
+(iteration 954):  100.0 correct
+expl loss: 5.713817197161575e-10
+output loss: 8.700093423463784e-11
+Color loss:  796.6377563476562
+(iteration 955):  100.0 correct
+expl loss: 5.518503432000443e-10
+output loss: 8.517676841623967e-11
+Color loss:  796.7449951171875
+(iteration 956):  100.0 correct
+expl loss: 5.694886229257179e-10
+output loss: 8.199721457380349e-11
+Color loss:  796.8621826171875
+(iteration 957):  100.0 correct
+expl loss: 5.503008604357262e-10
+output loss: 7.924681744153617e-11
+Color loss:  796.9085693359375
+(iteration 958):  100.0 correct
+expl loss: 5.586802132029334e-10
+output loss: 7.782628708152828e-11
+Color loss:  796.9532470703125
+(iteration 959):  100.0 correct
+expl loss: 5.590715668191137e-10
+output loss: 7.694698350713125e-11
+Color loss:  796.9795532226562
+(iteration 960):  100.0 correct
+expl loss: 5.643005507316445e-10
+output loss: 7.541788721310283e-11
+Color loss:  796.9884033203125
+(iteration 961):  100.0 correct
+expl loss: 5.614995135516665e-10
+output loss: 7.422213538221811e-11
+Color loss:  797.0151977539062
+(iteration 962):  100.0 correct
+expl loss: 5.586728302198196e-10
+output loss: 7.271602764369334e-11
+Color loss:  797.0238647460938
+(iteration 963):  100.0 correct
+expl loss: 5.775149802822455e-10
+output loss: 7.060814433135221e-11
+Color loss:  797.0906372070312
+(iteration 964):  100.0 correct
+expl loss: 5.596895724657713e-10
+output loss: 6.836954613564927e-11
+Color loss:  797.1737670898438
+(iteration 965):  100.0 correct
+expl loss: 5.576974992926864e-10
+output loss: 6.603936147930867e-11
+Color loss:  797.2223510742188
+(iteration 966):  100.0 correct
+expl loss: 5.527141522243539e-10
+output loss: 6.467502922102852e-11
+Color loss:  797.358154296875
+(iteration 967):  100.0 correct
+expl loss: 5.639796407663766e-10
+output loss: 6.264475049810869e-11
+Color loss:  797.4762573242188
+(iteration 968):  100.0 correct
+expl loss: 5.544550374381174e-10
+output loss: 6.178372397025456e-11
+Color loss:  797.5989990234375
+(iteration 969):  100.0 correct
+expl loss: 5.541798686614641e-10
+output loss: 6.040951072705525e-11
+Color loss:  797.6968994140625
+(iteration 970):  100.0 correct
+expl loss: 5.648758683030053e-10
+output loss: 5.865930657877882e-11
+Color loss:  797.7827758789062
+(iteration 971):  100.0 correct
+expl loss: 5.620938714478996e-10
+output loss: 5.550303966428416e-11
+Color loss:  797.8743896484375
+(iteration 972):  100.0 correct
+expl loss: 5.509342426712749e-10
+output loss: 5.2091612273708066e-11
+Color loss:  797.950439453125
+(iteration 973):  100.0 correct
+expl loss: 5.7444354828462e-10
+output loss: 4.987260257549586e-11
+Color loss:  798.0369873046875
+(iteration 974):  100.0 correct
+expl loss: 5.5657234376838e-10
+output loss: 4.780430565287652e-11
+Color loss:  798.1141357421875
+(iteration 975):  100.0 correct
+expl loss: 5.536488489887859e-10
+output loss: 4.6205046733138744e-11
+Color loss:  798.2460327148438
+(iteration 976):  100.0 correct
+expl loss: 5.521968993171811e-10
+output loss: 4.4444749963679087e-11
+Color loss:  798.3630981445312
+(iteration 977):  100.0 correct
+expl loss: 5.554438575749998e-10
+output loss: 4.310543241792253e-11
+Color loss:  798.50390625
+(iteration 978):  100.0 correct
+expl loss: 5.607896924608724e-10
+output loss: 4.2307404107821966e-11
+Color loss:  798.56396484375
+(iteration 979):  100.0 correct
+expl loss: 5.544233405707644e-10
+output loss: 4.124859481757781e-11
+Color loss:  798.6117553710938
+(iteration 980):  100.0 correct
+expl loss: 5.572013406229814e-10
+output loss: 4.0662410938363536e-11
+Color loss:  798.6561889648438
+(iteration 981):  100.0 correct
+expl loss: 5.726577545495104e-10
+output loss: 4.057900890308552e-11
+Color loss:  798.679443359375
+(iteration 982):  100.0 correct
+expl loss: 5.523887458558363e-10
+output loss: 4.037967182846103e-11
+Color loss:  798.7177124023438
+(iteration 983):  100.0 correct
+expl loss: 5.465380925606667e-10
+output loss: 3.984504046150583e-11
+Color loss:  798.7632446289062
+(iteration 984):  100.0 correct
+expl loss: 5.679889891752055e-10
+output loss: 3.9049243005795375e-11
+Color loss:  798.8228759765625
+(iteration 985):  100.0 correct
+expl loss: 5.55366141963276e-10
+output loss: 3.8726861995019846e-11
+Color loss:  798.8514404296875
+(iteration 986):  100.0 correct
+expl loss: 5.704955952090529e-10
+output loss: 3.8601875168575717e-11
+Color loss:  798.8981323242188
+(iteration 987):  100.0 correct
+expl loss: 5.758284404855374e-10
+output loss: 3.820914071250847e-11
+Color loss:  798.9225463867188
+(iteration 988):  100.0 correct
+expl loss: 5.665735103299596e-10
+output loss: 3.7841424438411764e-11
+Color loss:  798.9522094726562
+(iteration 989):  100.0 correct
+expl loss: 5.478750786380715e-10
+output loss: 3.7542486480690584e-11
+Color loss:  798.9476928710938
+(iteration 990):  100.0 correct
+expl loss: 5.64533753077967e-10
+output loss: 3.68879995993332e-11
+Color loss:  798.9830932617188
+(iteration 991):  100.0 correct
+expl loss: 5.656869417336452e-10
+output loss: 3.6280100451646646e-11
+Color loss:  799.014404296875
+(iteration 992):  100.0 correct
+expl loss: 5.629986477018178e-10
+output loss: 3.519468744217491e-11
+Color loss:  799.0614624023438
+(iteration 993):  100.0 correct
+expl loss: 5.596318408684908e-10
+output loss: 3.410154103544727e-11
+Color loss:  799.1128540039062
+(iteration 994):  100.0 correct
+expl loss: 5.430932370487085e-10
+output loss: 3.3561747131427566e-11
+Color loss:  799.175048828125
+(iteration 995):  100.0 correct
+expl loss: 5.779357548085784e-10
+output loss: 3.334882023309227e-11
+Color loss:  799.2423706054688
+(iteration 996):  100.0 correct
+expl loss: 5.347107756570324e-10
+output loss: 3.281800178833727e-11
+Color loss:  799.306884765625
+(iteration 997):  100.0 correct
+expl loss: 5.589887996926279e-10
+output loss: 3.206283155643419e-11
+Color loss:  799.4022827148438
+(iteration 998):  100.0 correct
+expl loss: 5.570855998726643e-10
+output loss: 3.131737577599658e-11
+Color loss:  799.4755859375
+(iteration 999):  100.0 correct
+attack type: [0, 1, 1]
+tensor([134.1580], device='cuda:0', grad_fn=<AddBackward0>)
+tensor([2.1223], device='cuda:0', grad_fn=<PowBackward0>)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/ubuntu/PerceptualSimilarity/lpips/weights/v0.1/vgg.pth
+LPIPS:  0.1893361508846283

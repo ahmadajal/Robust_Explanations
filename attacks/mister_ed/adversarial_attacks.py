@@ -336,6 +336,9 @@ class PGD(AdversarialAttack):
         if optimizer_kwargs is None:
             optimizer_kwargs = {'lr':0.0001}
         optimizer = optimizer(perturbation.parameters(), **optimizer_kwargs)
+        ######
+        scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[max_iterations//2], gamma=0.4)
+        ######
 
         update_fxn = lambda grad_data: -1 * step_size * torch.sign(grad_data)
 
@@ -355,6 +358,9 @@ class PGD(AdversarialAttack):
                 perturbation.update_params(update_fxn)
             else:
                 optimizer.step()
+                #####
+                scheduler.step(iter_no)
+                #####
 
             if keep_best:
                 mask_val = torch.zeros(num_examples, dtype=torch.uint8)

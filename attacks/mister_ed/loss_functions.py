@@ -9,7 +9,7 @@ from functools import partial
 from . import adversarial_perturbations as ap
 # for lpips
 import sys
-sys.path.append("../PerceptualSimilarity/")
+sys.path.append("/home/ubuntu/PerceptualSimilarity/")
 sys.path.append("/home/ubuntu/PerC-Adversarial/") # for perceptual color distance regulariation - https://github.com/ZhengyuZhao/PerC-Adversarial
 from differential_color_functions import rgb2lab_diff, ciede2000_diff
 import lpips

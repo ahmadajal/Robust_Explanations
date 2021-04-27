@@ -13,7 +13,7 @@ import random
 
 from .utils import pytorch_utils as utils
 from .utils import image_utils as img_utils
-from recoloradv.mister_ed import adversarial_attacks as attacks
+from . import adversarial_attacks as attacks
 
 
 ##############################################################################
@@ -414,7 +414,7 @@ class AdversarialTraining(object):
             logger = self.logger
         if logger.data_count() > 0:
             print("WARNING: LOGGER IS NOT EMPTY! BE CAREFUL!")
-        logger.add_series('training_loss')        
+        logger.add_series('training_loss')
         for key in (attack_parameters or {}).keys():
             logger.add_series(key)
 
@@ -451,7 +451,7 @@ class AdversarialTraining(object):
                 if self.use_gpu:
                     inputs = inputs.cuda()
                     labels = labels.cuda()
-                    
+
 
                 # Build adversarial examples
                 attack_out = self._attack_subroutine(attack_parameters,
@@ -496,7 +496,7 @@ class AdversarialTraining(object):
                 # log things
                 running_loss_log += float(loss.data)
                 running_loss_log_mb += 1
-                if (loglevel_level >= 1 and                    
+                if (loglevel_level >= 1 and
                     i % loglevel_minibatch == loglevel_minibatch - 1):
                     logger.log('training_loss', epoch, i + 1,
                                running_loss_log / float(running_loss_log_mb))
@@ -566,6 +566,3 @@ class AdversarialTraining(object):
                    verbosity=verbosity,
                    starting_epoch=epoch,
                    adversarial_save_dir=adversarial_save_dir)
-
-
-

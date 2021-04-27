@@ -1,12 +1,12 @@
 #!/bin/bash
-# if [ -d output_expl/add/ ]
-# then
-#   rm -r output_expl/add/
-# fi
-# mkdir output_expl/add/
-# touch output_expl/add/output.log
-# python attack_expl_recoloradv.py --output_dir output_expl/add/ --norm_weights 0.2 0.2 0.0 --attack_type 0 0 1 --additive_lp_bound 0.08| tee -a output_expl/add/output.log
-# #
+if [ -d output_expl/add/ ]
+then
+  rm -r output_expl/add/
+fi
+mkdir output_expl/add/
+touch output_expl/add/output.log
+python attack_expl.py --output_dir output_expl/add/ --norm_weights 0.2 0.2 0.0 --attack_type 0 0 1 --additive_lp_bound 0.08 --num_iter 10 | tee -a output_expl/add/output.log
+#
 # if [ -d output_expl/stadv/ ]
 # then
 #   rm -r output_expl/stadv/
@@ -63,26 +63,26 @@
 # touch output_expl/add_ciede/output.log
 # python attack_expl_recoloradv.py --output_dir output_expl/add_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 0 0 1 --additive_lp_bound 0.12 --ciede2000_reg 0.005 | tee -a output_expl/add_ciede/output.log
 #
-if [ -d output_expl/add_stadv_ciede/ ]
-then
-  rm -r output_expl/add_stadv_ciede/
-fi
-mkdir output_expl/add_stadv_ciede/
-touch output_expl/add_stadv_ciede/output.log
-python attack_expl_recoloradv.py --output_dir output_expl/add_stadv_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 0 1 1 --additive_lp_bound 0.1 --stadv_lp_bound 0.07 --ciede2000_reg 0.005 --early_stop_for "expl" --early_stop_value 1.6e-11 | tee -a output_expl/add_stadv_ciede/output.log
-#
-if [ -d output_expl/add_recolor_ciede/ ]
-then
-  rm -r output_expl/add_recolor_ciede/
-fi
-mkdir output_expl/add_recolor_ciede/
-touch output_expl/add_recolor_ciede/output.log
-python attack_expl_recoloradv.py --output_dir output_expl/add_recolor_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 1 0 1 --additive_lp_bound 0.12 --ciede2000_reg 0.005 --early_stop_for "expl" --early_stop_value 1.6e-11 | tee -a output_expl/add_recolor_ciede/output.log
-#
-if [ -d output_expl/add_stadv_recolor_ciede/ ]
-then
-  rm -r output_expl/add_stadv_recolor_ciede/
-fi
-mkdir output_expl/add_stadv_recolor_ciede/
-touch output_expl/add_stadv_recolor_ciede/output.log
-python attack_expl_recoloradv.py --output_dir output_expl/add_stadv_recolor_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 1 1 1 --additive_lp_bound 0.1 --stadv_lp_bound 0.07 --ciede2000_reg 0.005 --early_stop_for "expl" --early_stop_value 1.6e-11 | tee -a output_expl/add_stadv_recolor_ciede/output.log
+# if [ -d output_expl/add_stadv_ciede/ ]
+# then
+#   rm -r output_expl/add_stadv_ciede/
+# fi
+# mkdir output_expl/add_stadv_ciede/
+# touch output_expl/add_stadv_ciede/output.log
+# python attack_expl_recoloradv.py --output_dir output_expl/add_stadv_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 0 1 1 --additive_lp_bound 0.1 --stadv_lp_bound 0.07 --ciede2000_reg 0.005 --early_stop_for "expl" --early_stop_value 1.6e-11 | tee -a output_expl/add_stadv_ciede/output.log
+# #
+# if [ -d output_expl/add_recolor_ciede/ ]
+# then
+#   rm -r output_expl/add_recolor_ciede/
+# fi
+# mkdir output_expl/add_recolor_ciede/
+# touch output_expl/add_recolor_ciede/output.log
+# python attack_expl_recoloradv.py --output_dir output_expl/add_recolor_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 1 0 1 --additive_lp_bound 0.12 --ciede2000_reg 0.005 --early_stop_for "expl" --early_stop_value 1.6e-11 | tee -a output_expl/add_recolor_ciede/output.log
+# #
+# if [ -d output_expl/add_stadv_recolor_ciede/ ]
+# then
+#   rm -r output_expl/add_stadv_recolor_ciede/
+# fi
+# mkdir output_expl/add_stadv_recolor_ciede/
+# touch output_expl/add_stadv_recolor_ciede/output.log
+# python attack_expl_recoloradv.py --output_dir output_expl/add_stadv_recolor_ciede/ --norm_weights 0.2 0.2 0.0 --attack_type 1 1 1 --additive_lp_bound 0.1 --stadv_lp_bound 0.07 --ciede2000_reg 0.005 --early_stop_for "expl" --early_stop_value 1.6e-11 | tee -a output_expl/add_stadv_recolor_ciede/output.log
