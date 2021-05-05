@@ -44,9 +44,9 @@ data_mean = np.array([0.485, 0.456, 0.406])
 data_std = np.array([0.229, 0.224, 0.225])
 import argparse
 argparser = argparse.ArgumentParser()
-argparser.add_argument('--num_iter', type=int, default=1000, help='number of iterations')
-argparser.add_argument('--img', type=str, default='data/collie4.jpeg', help='image net file to run attack on')
-argparser.add_argument('--target_img', type=str, default='data/tiger_cat.jpeg',
+argparser.add_argument('--num_iter', type=int, default=1500, help='number of iterations')
+argparser.add_argument('--img', type=str, default='../sample_imagenet/sample_0.jpg', help='imagenet file to run attack on')
+argparser.add_argument('--target_img', type=str, default='../sample_imagenet/sample_0_target.jpg',
                        help='imagenet file used to generate target expl')
 argparser.add_argument('--lr', type=float, default=0.0002, help='lr')
 argparser.add_argument('--output_dir', type=str, default='output_expl_relu/', help='directory to save results to')
@@ -80,6 +80,7 @@ examples = examples.unsqueeze(0)
 labels = torch.tensor([17])
 
 model = torchvision.models.vgg16(pretrained=True)
+# model = torchvision.models.resnet18(pretrained=True)
 # we need to substitute the ReLus with softplus to avoid zero second derivative
 model = convert_relu_to_softplus(model, beta=100)
 ####
