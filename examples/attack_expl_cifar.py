@@ -38,7 +38,7 @@ sys.path.append("../Perc-Adversarial/") # for perceptual color distance regulari
 import lpips
 from differential_color_functions import rgb2lab_diff, ciede2000_diff
 sys.path.append("../../pytorch-cifar/models/")
-from resnet_softplus import ResNet18
+from resnet_softplus import ResNet18, ResNet50
 data_mean=np.array([0.4914, 0.4822, 0.4465])
 data_std=np.array([0.2023, 0.1994, 0.2010])
 import argparse
@@ -90,9 +90,14 @@ dataiter = iter(test_loader)
 image, label = next(dataiter)
 examples = image[10].unsqueeze(dim=0)
 labels = torch.tensor([label[10].item()])
-# ResNet 18 for CIFAR
-model = ResNet18()
-model.load_state_dict(torch.load(args.model_path)["net"])
+# ResNet 18 for CURE and ResNet50 for adv training
+if args.model_path.startswith("../notebooks/models/RN18"):
+    model = ResNet18()
+    model.load_state_dict(torch.load(args.model_path)["net"])
+else:
+    model = ResNet50()
+    model.load_state_dict(torch.load(args.model_path))
+
 # model already has softplus activations
 # # we need to substitute the ReLus with softplus to avoid zero second derivative
 # model = convert_relu_to_softplus(model, beta=100)
@@ -129,7 +134,6 @@ class EXPL_Loss_mse(lf.PartialLoss):
         # get adversarial expl
         adv_expl = get_expl(self.classifier, classifier_in, self.method,
                             desired_index=labels, smooth=self.smooth, sigma=sigma, normalize=True)
-        print(adv_expl.requires_grad)
         loss_expl = F.mse_loss(adv_expl, self.target_expl)
         print("expl loss:", loss_expl.item())
         return loss_expl
@@ -161,6 +165,7 @@ target_label = label[8]
 # we always use the saliency as the target explanation map
 target_expl = get_expl(model, normalizer.forward(target_examples), "saliency",
                         desired_index=target_label, smooth=False, sigma=sigma, normalize=True)
+
 target_expl = target_expl.detach()
 # original explanation and logits - need not to be normalized as it is not part of the objective func
 org_expl = get_expl(model, normalizer.forward(examples),
