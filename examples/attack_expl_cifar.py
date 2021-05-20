@@ -44,9 +44,9 @@ data_std=np.array([0.2023, 0.1994, 0.2010])
 import argparse
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--num_iter', type=int, default=1500, help='number of iterations')
-# argparser.add_argument('--img', type=str, default='../sample_imagenet/sample_0.jpg', help='imagenet file to run attack on')
-# argparser.add_argument('--target_img', type=str, default='../sample_imagenet/sample_0_target.jpg',
-#                        help='imagenet file used to generate target expl')
+argparser.add_argument('--img_idx', type=int, default=10, help='idx of the image from cifar test set')
+argparser.add_argument('--target_img_idx', type=int, default=8,
+                       help='idx of the target image from cifar test set')
 argparser.add_argument('--model_path', type=str, default='../notebooks/models/RN18_standard.pth',
                        help='path to the pretrained model weigths')
 argparser.add_argument('--lr', type=float, default=0.0002, help='lr')
@@ -83,13 +83,13 @@ cifar_test = torchvision.datasets.CIFAR10(root="./data", train=False, download=T
                                           transform=transforms.ToTensor())
 test_loader = torch.utils.data.DataLoader(
         cifar_test,
-        batch_size=32,
+        batch_size=128,
         shuffle=False
     )
 dataiter = iter(test_loader)
 image, label = next(dataiter)
-examples = image[10].unsqueeze(dim=0)
-labels = torch.tensor([label[10].item()])
+examples = image[args.img_idx].unsqueeze(dim=0)
+labels = torch.tensor([label[args.img_idx].item()])
 # ResNet 18 for CURE and ResNet50 for adv training
 if args.model_path.startswith("../notebooks/models/RN18"):
     model = ResNet18()
@@ -157,11 +157,13 @@ class OUTPUT_Loss_mse(lf.PartialLoss):
         print("output loss:", loss_output.item())
         return loss_output
 
+# next batch
+image, label = next(dataiter)
 # target expl
-target_examples = image[8].unsqueeze(0)
+target_examples = image[args.target_img_idx].unsqueeze(0)
 if utils.use_gpu():
     target_examples = target_examples.cuda()
-target_label = label[8]
+target_label = label[args.target_img_idx]
 # we always use the saliency as the target explanation map
 target_expl = get_expl(model, normalizer.forward(target_examples), "saliency",
                         desired_index=target_label, smooth=False, sigma=sigma, normalize=True)

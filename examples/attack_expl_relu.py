@@ -157,14 +157,11 @@ target_examples = target_examples.unsqueeze(0)
 if utils.use_gpu():
     target_examples = target_examples.cuda()
 target_label = model(normalizer.forward(target_examples)).argmax()
-# we always use the saliency as the target explanation map
-target_expl = get_expl(model, normalizer.forward(target_examples), "saliency",
-                        desired_index=target_label, smooth=False, sigma=sigma, normalize=True)
+# target explanation map from the same method being attacked
+target_expl = get_expl(model, normalizer.forward(target_examples), args.method,
+                        desired_index=target_label, smooth=args.smooth, sigma=sigma, normalize=True)
 target_expl = target_expl.detach()
-# original explanation and logits - need not to be normalized as it is not part of the objective func
-org_expl = get_expl(model, normalizer.forward(examples),
-                         args.method, desired_index=target_label, smooth=args.smooth, sigma=sigma)
-org_expl = org_expl.detach().cpu()
+# original logits
 org_logits = F.softmax(model(normalizer.forward(examples)), dim=1)
 org_logits = org_logits.detach()
 
@@ -240,11 +237,26 @@ perturbation = pgd_attack_obj.attack(examples, labels, num_iterations=args.num_i
                                      optimizer=optim.Adam, optimizer_kwargs={'lr': args.lr},
                                      verbose=True, early_stop_for=args.early_stop_for,
                                      early_stop_value=args.early_stop_value)
+
+# computing adv explanation again with normalize to print the final MSE
+adv_expl = get_expl(model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
+                    desired_index=labels, smooth=args.smooth, sigma=sigma, normalize=True)
+print("Final MSE: ", F.mse_loss(adv_expl, target_expl).item())
+########
+# get the explanations again for the ReLU model
+model = torchvision.models.vgg16(pretrained=True)
+model = model.eval()
+if utils.use_gpu():
+    model.cuda()
+# original explanation and logits - need not to be normalized as it is not part of the objective func
+org_expl = get_expl(model, normalizer.forward(examples),
+                         args.method, desired_index=labels, smooth=args.smooth, sigma=sigma)
+# adv explanation
 adv_expl = get_expl(model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
                     desired_index=labels, smooth=args.smooth, sigma=sigma)
 # get the target expl again without normalize to pass to the plot function
-target_expl = get_expl(model, normalizer.forward(target_examples), "saliency",
-                        desired_index=target_label, smooth=False, sigma=sigma)
+target_expl = get_expl(model, normalizer.forward(target_examples), args.method,
+                        desired_index=target_label, smooth=args.smooth, sigma=sigma)
 s = "_smooth" if args.smooth else ""
 plot_overview([normalizer.forward(target_examples),
                normalizer.forward(examples),
