@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+notebooks/__pycache__/
+notebooks/.ipynb_checkpoints/
 *.py[cod]
 *$py.class
 
@@ -168,3 +170,11 @@ examples/post_hoc_results_batch_cifar/
 examples/output_expl/
 examples/output_expl_cifar/
 examples/output_expl_relu/
+infidelity_sensitivity/results/
+infidelity_sensitivity/results_cifar_square/
+infidelity_sensitivity/results_square/
+infidelity_sensitivity/results_square_2_cifar/
+infidelity_sensitivity/results_temp/
+notebooks/data/
+notebooks/models/
+notebooks/results/
