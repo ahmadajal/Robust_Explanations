@@ -29,7 +29,8 @@ from captum.attr import (
             GuidedBackprop,
             NoiseTunnel,
             GuidedGradCam,
-            InputXGradient)
+            InputXGradient,
+            DeepLift)
 from captum.attr import visualization as viz
 
 # dictionary to convert the method name to the proper class
@@ -39,7 +40,8 @@ expl_methods={
             "lrp": LRP,
             "guided_backprop": GuidedBackprop,
             "guided_gradcam": GuidedGradCam,
-            "input_times_grad": InputXGradient
+            "input_times_grad": InputXGradient,
+            "deep_lift": DeepLift
 }
 
 def load_pretrained_cifar10_model(
@@ -144,10 +146,30 @@ def get_attack_from_name(
         }},
     )
 
-def UniGrad(model, x, target, num_steps, sigma, return_noisy_expls=False):
+def UniGrad(model, x, target, num_steps, sigma, abs_value=True, return_noisy_expls=False):
+    def multi_sigma_uniform_noise(x, sigma):
+        noise = [x[i].data.new(x[i].size()).uniform_(-sigma[i], sigma[i]) for i in range(x.size()[0])]
+        noise = torch.stack(noise)
+        return noise
+    def add_noise(x, sigma):
+        if isinstance(sigma, tuple):
+            assert len(sigma) == len(x), (
+                "The number of input tensors "
+                "in {} must be equal to the number of stdevs values {}".format(
+                    len(x), len(sigma)
+                )
+            )
+            noisy_x = [x+multi_sigma_uniform_noise(x,sigma) for _ in range(num_steps)]
+        else:
+            assert isinstance(
+                sigma, float
+            ), "stdevs must be type float. " "Given: {}".format(type(sigma))
+            noisy_x = [x+x.data.new(x.size()).uniform_(-sigma, sigma) for i in range(num_steps)]
+        return noisy_x
     sm = Saliency(model)
-    noisy_x = [x+x.data.new(x.size()).uniform_(-sigma, sigma) for i in range(num_steps)]
-    all_expl = [sm.attribute(img, target=target) for img in noisy_x]
+    # noisy_x = [x+x.data.new(x.size()).uniform_(-sigma, sigma) for i in range(num_steps)]
+    noisy_x = add_noise(x, sigma)
+    all_expl = [sm.attribute(img, target=target, abs=abs_value) for img in noisy_x]
     expl = torch.stack(all_expl)
     expl = torch.mean(expl, dim=0)
     if return_noisy_expls:
@@ -155,7 +177,7 @@ def UniGrad(model, x, target, num_steps, sigma, return_noisy_expls=False):
     else:
         return expl
 
-def get_expl(model, x, method, desired_index=None, smooth=False, sigma=1.0, layer=None, normalize=False):
+def get_expl(model, x, method, desired_index=None, smooth=False, sigma=1.0, abs_value=True, layer=None, normalize=False, multiply_by_input=False):
     """
     helper function to compute the explanation heatmap
     layer: (only used if method = guided_gradcam) Layer for which GradCAM attributions are computed.
@@ -164,7 +186,7 @@ def get_expl(model, x, method, desired_index=None, smooth=False, sigma=1.0, laye
     if desired_index is None:
         desired_index = model(x).argmax()
     if method == "uniform_grad": # for uniform gradient method
-        heatmap = UniGrad(model, x, target=desired_index, num_steps=5, sigma=sigma)
+        heatmap = UniGrad(model, x, target=desired_index, num_steps=10, sigma=sigma, abs_value=abs_value)
     else: # for rest of the methods
         try:
             explantion = expl_methods[method] # this is the explanation class to call
@@ -178,15 +200,29 @@ def get_expl(model, x, method, desired_index=None, smooth=False, sigma=1.0, laye
         else:
             explantion_method = explantion(model) # an instance of the "explanation" class
         #####
-        if smooth:
+        if smooth and method == "saliency":
             smooth_explanation_method = NoiseTunnel(explantion_method)
-            heatmap = smooth_explanation_method.attribute(x, nt_samples=5, stdevs=sigma, nt_type='smoothgrad', target=desired_index)
+            heatmap = smooth_explanation_method.attribute(x, nt_samples=10, stdevs=sigma, nt_type='smoothgrad', target=desired_index, abs=abs_value)
         else:
-            heatmap = explantion_method.attribute(x, target=desired_index)
-    #####
-    if normalize:
-        heatmap = torch.sum(heatmap.squeeze(), 0, True)
+            if method == "saliency":
+                heatmap = explantion_method.attribute(x, target=desired_index, abs=abs_value)
+            else:
+                heatmap = explantion_method.attribute(x, target=desired_index)
+
+    ###################
+    if multiply_by_input:
+        heatmap = x * heatmap
+    ###################
+    # Update: added abs value for normalize
+    if normalize and heatmap.size()[0]==1:
+        heatmap = torch.sum(torch.abs(heatmap.squeeze()), 0, True)
         heatmap = heatmap / torch.sum(heatmap)
+    if normalize and heatmap.size()[0]>1:
+        heatmap = torch.sum(torch.abs(heatmap), 1, True)
+        heatmap = heatmap / torch.sum(heatmap, (1,2,3), True)
+    ### release the memory ###
+    torch.cuda.empty_cache()
+    ##########################
     return heatmap
 
 def load_image(data_mean, data_std, device, image_name):
@@ -250,6 +286,17 @@ def convert_relu_to_softplus(model, beta):
             setattr(model, child_name, nn.Softplus(beta=beta))
         else:
             convert_relu_to_softplus(child, beta)
+    return model
+
+def change_beta_softplus(model, beta):
+    """
+    This function changes the beta parameter of a softplus network.
+    """
+    for child_name, child in model.named_children():
+        if isinstance(child, nn.Softplus):
+            setattr(model, child_name, nn.Softplus(beta=beta))
+        else:
+            change_beta_softplus(child, beta)
     return model
 
 
