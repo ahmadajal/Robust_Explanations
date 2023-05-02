@@ -11,6 +11,9 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import matplotlib
 import sys
+# for distances between expls
+from scipy.stats import spearmanr as spr
+import scipy.spatial as spatial
 sys.path.append("../attacks/")
 # mister_ed
 import mister_ed.loss_functions as lf
@@ -39,6 +42,7 @@ import lpips
 from differential_color_functions import rgb2lab_diff, ciede2000_diff
 sys.path.append("../../pytorch-cifar/models/")
 from resnet_softplus import ResNet18, ResNet50
+import resnet
 data_mean=np.array([0.4914, 0.4822, 0.4465])
 data_std=np.array([0.2023, 0.1994, 0.2010])
 import argparse
@@ -248,11 +252,32 @@ perturbation = pgd_attack_obj.attack(examples, labels, num_iterations=args.num_i
                                      optimizer=optim.Adam, optimizer_kwargs={'lr': args.lr},
                                      verbose=True, early_stop_for=args.early_stop_for,
                                      early_stop_value=args.early_stop_value)
+##
+# load models with ReLU
+if args.model_path.startswith("../notebooks/models/RN18"):
+    model = resnet.ResNet18()
+    model.load_state_dict(torch.load(args.model_path)["net"])
+else:
+    model = resnet.ResNet50()
+    model.load_state_dict(torch.load(args.model_path))
+if utils.use_gpu():
+    model.cuda()
+# compute the final MSE:
+adv_expl = get_expl(model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
+                    desired_index=labels, normalize=True, smooth=args.smooth, sigma=sigma)
+target_expl = get_expl(model, normalizer.forward(target_examples), args.method,
+                        desired_index=target_label, normalize=True, smooth=args.smooth, sigma=sigma)
+print("Final MSE: ", F.mse_loss(adv_expl, target_expl).item())
+print("Final spr", spr(adv_expl.detach().cpu().flatten(), target_expl.detach().cpu().flatten()))
+print("Final cosd", spatial.distance.cosine(adv_expl.detach().cpu().flatten(),
+                                            target_expl.detach().cpu().flatten()))
+# get the explanations again without normalize to pass to the plot function
+org_expl = get_expl(model, normalizer.forward(examples), args.method, desired_index=target_label,
+                    smooth=args.smooth, sigma=sigma)
 adv_expl = get_expl(model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
                     desired_index=labels, smooth=args.smooth, sigma=sigma)
-# get the target expl again without normalize to pass to the plot function
-target_expl = get_expl(model, normalizer.forward(target_examples), "saliency",
-                        desired_index=target_label, smooth=False, sigma=sigma)
+target_expl = get_expl(model, normalizer.forward(target_examples), args.method,
+                        desired_index=target_label, smooth=args.smooth, sigma=sigma)
 s = "_smooth" if args.smooth else ""
 plot_overview([normalizer.forward(target_examples),
                normalizer.forward(examples),

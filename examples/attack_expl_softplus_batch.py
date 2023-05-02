@@ -34,7 +34,6 @@ from recoloradv import norms
 from utils import load_image, torch_to_image, get_expl, convert_relu_to_softplus, plot_overview, UniGrad
 # explanation
 import sys
-import time
 # sys.path.append("../Spatial_transform/ST_ADV_exp_imagenet/")
 sys.path.append("../PerceptualSimilarity/") # for LPIPS similarity
 sys.path.append("../Perc-Adversarial/") # for perceptual color distance regulariation - https://github.com/ZhengyuZhao/PerC-Adversarial
@@ -46,15 +45,18 @@ data_std = np.array([0.229, 0.224, 0.225])
 import argparse
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--num_iter', type=int, default=1500, help='number of iterations')
-argparser.add_argument('--img_idx', type=int, default=255)
-argparser.add_argument('--target_img_idx', type=int, default=72)
+argparser.add_argument('--img_idx', type=int, default=657)
+argparser.add_argument('--target_img_idx', type=int, default=80)
 argparser.add_argument('--lr', type=float, default=0.0002, help='lr')
 argparser.add_argument('--output_dir', type=str, default='output_expl_relu/', help='directory to save results to')
+argparser.add_argument('--beta', type=float, default=0.8, help='beta for the soft-plus model')
 argparser.add_argument('--method', help='algorithm for expls',
                        choices=['lrp', 'guided_backprop', 'saliency', 'integrated_grad',
                             'input_times_grad', 'uniform_grad'],
                        default='lrp')
 argparser.add_argument('--smooth',type=bool, help="wether to use the smooth explanation or not", default=False)
+argparser.add_argument('--multiply_by_input',type=bool,
+                        help="whether to multiply the explanation by input or not", default=False)
 argparser.add_argument('--additive_lp_bound', type=float, default=0.03, help='l_p bound for additive attack')
 argparser.add_argument('--stadv_lp_bound', type=float, default=0.05, help='l_p bound for spatial transformation')
 argparser.add_argument('--norm_weights', nargs=3, default=[1.0, 1.0, 0.0], type=float,
@@ -67,6 +69,8 @@ argparser.add_argument('--attack_type', nargs=3, default=[1, 1, 1], type=int,
 argparser.add_argument('--early_stop_for', type=str, default=None, help='eraly stop for part of the loss')
 argparser.add_argument('--early_stop_value', type=float, default=10.0, help='stop the optimization if \
                         (part of) the loss dropped below a certain level.')
+argparser.add_argument('--add_to_seed', default=0, type=int,
+                        help="to be added to the seed")
 args = argparser.parse_args()
 print(args.smooth)
 a = np.array(args.attack_type)
@@ -79,9 +83,9 @@ from PIL import Image
 # examples = examples.unsqueeze(0)
 # labels = torch.tensor([17])
 # set seed to get the same images every time
-np.random.seed(73)
-torch.manual_seed(73)
-torch.cuda.manual_seed(73)
+np.random.seed(72+args.add_to_seed)
+torch.manual_seed(72+args.add_to_seed)
+torch.cuda.manual_seed(72+args.add_to_seed)
 trasform_imagenet = torchvision.transforms.Compose([torchvision.transforms.Resize(256),
                                         torchvision.transforms.CenterCrop(224),
                                         torchvision.transforms.ToTensor()])
@@ -93,20 +97,36 @@ test_loader = torch.utils.data.DataLoader(
         batch_size=1024,
         shuffle=True
     )
+model = torchvision.models.vgg16(pretrained=True)
+# model = torchvision.models.resnet18(pretrained=True)
+BATCH_SIZE = 16
+indices = np.random.randint(1024, size=BATCH_SIZE)
 #### load images #####
 dataiter = iter(test_loader)
 images_batch, labels_batch = next(dataiter)
-examples = images_batch[args.img_idx].unsqueeze(dim=0)
-labels = torch.tensor([labels_batch[args.img_idx].item()])
+examples = images_batch[indices]
+labels = labels_batch[indices]
+# keep only samples for which the model makes a correct prediction
+preds = model(examples).argmax(dim=1)
+samples_to_pick = (preds==labels)
+examples = examples[samples_to_pick]
+labels = labels[samples_to_pick]
 #### target ######
 images_batch, labels_batch = next(dataiter)
-target_examples = images_batch[args.target_img_idx].unsqueeze(dim=0)
-target_label = torch.tensor([labels_batch[args.target_img_idx].item()])
+target_examples = images_batch[indices]
+target_labels = labels_batch[indices]
+target_examples = target_examples[samples_to_pick]
+target_labels = target_labels[samples_to_pick]
+##
+BATCH_SIZE = examples.size()[0]
 ######################
+# softplus model
+softplus_model = convert_relu_to_softplus(model, args.beta)
+softplus_model = softplus_model.eval()
+# load the relu model again
 model = torchvision.models.vgg16(pretrained=True)
-# model = torchvision.models.resnet18(pretrained=True)
-# we need to substitute the ReLus with softplus to avoid zero second derivative
-model = convert_relu_to_softplus(model, beta=100)
+# # we need to substitute the ReLus with softplus to avoid zero second derivative
+# model = convert_relu_to_softplus(model, beta=5)
 ####
 model = model.eval()
 ####
@@ -117,20 +137,25 @@ if utils.use_gpu():
     examples = examples.cuda()
     labels = labels.cuda()
     model.cuda()
+    softplus_model.cuda()
     target_examples = target_examples.cuda()
-
+    target_labels = target_labels.cuda()
 # sigma for the smooth grad and uniform grad methods
-sigma = (torch.max(normalizer.forward(examples)) - torch.min(normalizer.forward(examples))).item() * 0.2
+sigma = tuple((torch.max(normalizer.forward(examples)[i]) -
+        torch.min(normalizer.forward(examples)[i])).item() * 0.2 for i in range(examples.size()[0]))
+if len(sigma)==1:
+    sigma=sigma[0]
 print("sigma: ", sigma)
 ## expl loss
 class EXPL_Loss_mse(lf.PartialLoss):
-    def __init__(self, classifier, target_expl, method, normalizer=None, smooth=False):
+    def __init__(self, classifier, target_expl, method, normalizer=None, smooth=False, multiply_by_input=False):
         super(EXPL_Loss_mse, self).__init__()
         self.classifier = classifier
         self.target_expl = target_expl
         self.method = method
         self.normalizer = normalizer
         self.smooth = smooth
+        self.multiply_by_input = multiply_by_input
         self.nets.append(self.classifier)
 
 
@@ -139,8 +164,11 @@ class EXPL_Loss_mse(lf.PartialLoss):
         classifier_out = self.classifier.forward(classifier_in)
 
         # get adversarial expl
-        adv_expl = get_expl(self.classifier, classifier_in, self.method,
-                            desired_index=labels, smooth=self.smooth, sigma=sigma, normalize=True)
+        adv_expl = get_expl(self.classifier, classifier_in, self.method, desired_index=labels,
+                            smooth=self.smooth, sigma=sigma, normalize=True, multiply_by_input=self.multiply_by_input)
+        ### release the memory ###
+        torch.cuda.empty_cache()
+        ##########################
         ####temp#####
         # adv_expl, all_adv_expl = UniGrad(self.classifier, classifier_in, target=labels,
         #                                 num_steps=5, sigma=sigma, return_noisy_expls=True)
@@ -152,7 +180,7 @@ class EXPL_Loss_mse(lf.PartialLoss):
         # loss_expl = loss_expl / len(all_adv_expl)
         #############
         loss_expl = F.mse_loss(adv_expl, self.target_expl)
-        print("expl loss:", loss_expl.item())
+        print("expl loss:", loss_expl)
         return loss_expl
 
 ## output loss
@@ -183,9 +211,12 @@ class OUTPUT_Loss_mse(lf.PartialLoss):
 #     target_examples = target_examples.cuda()
 # target_label = model(normalizer.forward(target_examples)).argmax()
 # target explanation map from the same method being attacked
-target_expl = get_expl(model, normalizer.forward(target_examples), args.method,
-                        desired_index=target_label, smooth=args.smooth, sigma=sigma, normalize=True)
+target_expl = get_expl(softplus_model, normalizer.forward(target_examples), args.method, desired_index=target_labels,
+                        smooth=args.smooth, sigma=sigma, normalize=True, multiply_by_input=args.multiply_by_input)
 target_expl = target_expl.detach()
+### release the memory ###
+torch.cuda.empty_cache()
+##########################
 # original logits
 org_logits = F.softmax(model(normalizer.forward(examples)), dim=1)
 org_logits = org_logits.detach()
@@ -237,7 +268,7 @@ combined_threat = ap.ThreatModel(
 
 # Again, define the optimization terms.
 # explanation loss
-expl_loss = EXPL_Loss_mse(model, target_expl, args.method, normalizer, smooth=args.smooth)
+expl_loss = EXPL_Loss_mse(softplus_model, target_expl, args.method, normalizer, smooth=args.smooth, multiply_by_input=args.multiply_by_input)
 
 # output loss
 output_loss = OUTPUT_Loss_mse(model, org_logits, normalizer)
@@ -251,56 +282,70 @@ ciede2000_loss = lf.ciede2000Regularization(examples)
 # adv_loss = lf.CWLossF6(model, normalizer)
 smooth_loss = lf.PerturbationNormLoss(lp=2)
 attack_loss = lf.RegularizedLoss({'expl': expl_loss, 'out': output_loss, 'smooth': smooth_loss,
-                                  'lpips': lpips_loss, 'ciede2000': ciede2000_loss},
+                                  'lpips': lpips_loss},
                                  {'expl': 1e11 ,     'out': 1e5, 'smooth': 0.05,  # lambda = 0.05
-                                  'lpips': args.lpips_reg, 'ciede2000': args.ciede2000_reg},
+                                  'lpips': args.lpips_reg},
                                  negate=True) # Need this true for PGD type attacks
 
 # Setup and run PGD over both perturbations at once.
-start = time.time()
 pgd_attack_obj = aa.PGD(model, normalizer, combined_threat, attack_loss)
 perturbation = pgd_attack_obj.attack(examples, labels, num_iterations=args.num_iter, signed=False,
                                      optimizer=optim.Adam, optimizer_kwargs={'lr': args.lr}, step_size=args.lr, # for signed grad
                                      verbose=True, early_stop_for=args.early_stop_for,
                                      early_stop_value=args.early_stop_value)
-end = time.time()
-print("time", end-start)
-# computing adv explanation again with normalize to print the final MSE
-adv_expl = get_expl(model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
-                    desired_index=labels, smooth=args.smooth, sigma=sigma, normalize=True)
-print("Final MSE: ", F.mse_loss(adv_expl, target_expl).item())
-print("Final spr", spr(adv_expl.detach().cpu().flatten(), target_expl.detach().cpu().flatten()))
-print("Final cosd", spatial.distance.cosine(adv_expl.detach().cpu().flatten(),
-                                            target_expl.detach().cpu().flatten()))
-########
-# get the explanations again for the ReLU model
-model = torchvision.models.vgg16(pretrained=True)
-model = model.eval()
-if utils.use_gpu():
-    model.cuda()
-# original explanation and logits - need not to be normalized as it is not part of the objective func
-org_expl = get_expl(model, normalizer.forward(examples),
-                         args.method, desired_index=labels, smooth=args.smooth, sigma=sigma)
-# adv explanation
-adv_expl = get_expl(model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
-                    desired_index=labels, smooth=args.smooth, sigma=sigma)
-# get the target expl again without normalize to pass to the plot function
-target_expl = get_expl(model, normalizer.forward(target_examples), args.method,
-                        desired_index=target_label, smooth=args.smooth, sigma=sigma)
-s = "_smooth" if args.smooth else ""
-plot_overview([normalizer.forward(target_examples),
-               normalizer.forward(examples),
-               normalizer.forward(perturbation.adversarial_tensors())], \
-               [target_expl, org_expl, adv_expl], \
-               data_mean, data_std, filename=f"{args.output_dir}overview_{args.method}{s}.png")
-torch.save(perturbation.adversarial_tensors(), f"{args.output_dir}x_{args.method}{s}.pth") # this is the unnormalized tensor
 
-print("attack type:", args.attack_type)
-if sum(args.attack_type) <= 3:
-    print(perturbation.layer_00.perturbation_norm(perturbation.adversarial_tensors(), 2))
-if sum(args.attack_type) >= 2:
-    print(perturbation.layer_01.perturbation_norm(perturbation.adversarial_tensors(), 2))
-if sum(args.attack_type) == 3:
-    print(perturbation.layer_02.perturbation_norm(perturbation.adversarial_tensors(), 2))
+# computing adv explanation again with normalize to print the final MSE
+adv_expl = get_expl(softplus_model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
+                    desired_index=labels, smooth=args.smooth, sigma=sigma, normalize=True, multiply_by_input=args.multiply_by_input)
+### release the memory ###
+torch.cuda.empty_cache()
+##########################
+print("Final MSE: ", F.mse_loss(adv_expl, target_expl).item())
+# print("Final spr", spr(adv_expl.detach().cpu().flatten(), target_expl.detach().cpu().flatten()))
+print("Final cosd", [spatial.distance.cosine(adv_expl[i].detach().cpu().flatten(),
+                    target_expl[i].detach().cpu().flatten()) for i in range(adv_expl.size()[0])])
+# ########
+# get the explanations again for the ReLU model
+# first, delete the previous explanation tensors to release the memory!
+del adv_expl
+del target_expl
+### release the memory ###
+torch.cuda.empty_cache()
+##########################
+# original explanation and logits - need not to be normalized as it is not part of the objective func
+org_expl = get_expl(softplus_model, normalizer.forward(examples), args.method,
+                    desired_index=labels, smooth=args.smooth, sigma=sigma, multiply_by_input=args.multiply_by_input).detach().cpu()
+### release the memory ###
+torch.cuda.empty_cache()
+##########################
+# adv explanation
+adv_expl = get_expl(softplus_model, normalizer.forward(perturbation.adversarial_tensors()), args.method,
+                    desired_index=labels, smooth=args.smooth, sigma=sigma, multiply_by_input=args.multiply_by_input).detach().cpu()
+### release the memory ###
+torch.cuda.empty_cache()
+##########################
+# get the target expl again without normalize to pass to the plot function
+target_expl = get_expl(softplus_model, normalizer.forward(target_examples), args.method, desired_index=target_labels,
+                        smooth=args.smooth, sigma=sigma, multiply_by_input=args.multiply_by_input).detach().cpu()
+### release the memory ###
+torch.cuda.empty_cache()
+##########################
+s = "_smooth" if args.smooth else ""
+for i in range(BATCH_SIZE):
+    plot_overview([normalizer.forward(target_examples[i:i+1]),
+                   normalizer.forward(examples[i:i+1]),
+                   normalizer.forward(perturbation.adversarial_tensors()[i:i+1])], \
+                   [target_expl[i:i+1], org_expl[i:i+1], adv_expl[i:i+1]], \
+                   data_mean, data_std, filename=f"{args.output_dir}overview_{args.method}{s}_{i}.png")
+torch.save(perturbation.adversarial_tensors(), f"{args.output_dir}x_{args.method}{s}.pth") # this is the unnormalized tensor
+#
+# print("attack type:", args.attack_type)
+# if sum(args.attack_type) <= 3:
+#     print(perturbation.layer_00.perturbation_norm(perturbation.adversarial_tensors(), 2))
+# if sum(args.attack_type) >= 2:
+#     print(perturbation.layer_01.perturbation_norm(perturbation.adversarial_tensors(), 2))
+# if sum(args.attack_type) == 3:
+#     print(perturbation.layer_02.perturbation_norm(perturbation.adversarial_tensors(), 2))
 loss_lpips = lpips.LPIPS(net='vgg')
-print("LPIPS: ", loss_lpips.forward(examples.cpu(), perturbation.adversarial_tensors().cpu()).item())
+print("LPIPS: ", [loss_lpips.forward(examples.cpu()[i:i+1],
+                perturbation.adversarial_tensors().cpu()[i:i+1]).item() for i in range(BATCH_SIZE)])
