@@ -2,6 +2,7 @@
 __pycache__/
 notebooks/__pycache__/
 notebooks/.ipynb_checkpoints/
+attacks/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -178,3 +179,6 @@ infidelity_sensitivity/results_temp/
 notebooks/data/
 notebooks/models/
 notebooks/results/
+## Do not include bash scripts
+examples/*.sh
+
